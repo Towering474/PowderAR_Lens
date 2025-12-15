@@ -1,0 +1,181 @@
+- !<AssetImportMetadata/920c1046-0efe-47b1-87fa-d5d413c8973c>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 17a7116b-2195-4943-a2b2-c861810ccf7e
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 17a7116b-2195-4943-a2b2-c861810ccf7e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> f40c0364-c42c-4784-bd1d-f7c196bc0e7a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/02f5f9d1-991b-4d55-9b71-5210753d5247>
+  PrefabRemaps:
+    []
+  Name: Marker_Cube_PUT_UNDER_MAIN_CAM__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> bd1d13a9-1846-4c04-b912-17a0e4ddfb08
+    - !<own> 7010d2f8-5b36-42b0-a8b4-1daf382078ac
+    - !<own> 8e0bad92-a134-4cdf-8580-3f7ee0a229c9
+  Components:
+    - !<own> 1a112a33-e4e9-4c8c-b78e-0a9e77175fa1
+    - !<own> 0d1a7032-8e15-4c0b-b798-809a6ef93860
+- !<ScriptComponent/0d1a7032-8e15-4c0b-b798-809a6ef93860>
+  PrefabRemaps:
+    []
+  Name: EnableLightShadows
+  Enabled: true
+  ScriptAsset: !<reference> 1c0bc6d9-332f-458b-a1e4-fa564b3ea17c
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      autoEnableLightShadows: true
+      lightSource: !<reference.LightSource> 0005641c-028d-463e-0000-000000014b59
+  ScriptTypes:
+    "":
+      {}
+- !<MarkerTrackingComponent/1a112a33-e4e9-4c8c-b78e-0a9e77175fa1>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 0a7e4554-7b5b-4748-a1c1-ecc3ad6b063d
+- !<ObjectPrefab/2b28a3a1-de81-4888-aa84-67759175a047>
+  PackagePath: ""
+  objects:
+    - !<own> 02f5f9d1-991b-4d55-9b71-5210753d5247
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/7010d2f8-5b36-42b0-a8b4-1daf382078ac>
+  PrefabRemaps:
+    []
+  Name: Occluder
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7204b90a-819a-4208-bcb4-8b5b37098b02
+- !<RenderMeshVisual/7204b90a-819a-4208-bcb4-8b5b37098b02>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Receiver
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f09d67eb-85d3-4cdc-a9ee-082f890485cf
+  Mesh: !<reference> 84b1d53c-3a47-4b44-8236-fd365ba6ab61
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/7de2abda-0eca-4286-8140-1ff172598974>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Caster
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 2247a845-5a13-4aac-9459-4a752087ad68
+  Mesh: !<reference> 3491e482-7a9f-4752-a6dc-20c8ed73d485
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/7f6db16f-f64f-46fc-8822-53848f530eab>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Receiver
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6582dd65-c69d-41d6-8a80-8fabbfd1f39d
+  Mesh: !<reference> 84b1d53c-3a47-4b44-8236-fd365ba6ab61
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/8e0bad92-a134-4cdf-8580-3f7ee0a229c9>
+  PrefabRemaps:
+    []
+  Name: Box
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 2.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7de2abda-0eca-4286-8140-1ff172598974
+- !<SceneObject/bd1d13a9-1846-4c04-b912-17a0e4ddfb08>
+  PrefabRemaps:
+    []
+  Name: Matte Shadow
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7f6db16f-f64f-46fc-8822-53848f530eab
+- !<ObjectPrefabAssetData/f40c0364-c42c-4784-bd1d-f7c196bc0e7a>
+  SourceRemaps:
+    - 17a7116b-2195-4943-a2b2-c861810ccf7e: 2b28a3a1-de81-4888-aa84-67759175a047
+    - 2e226122-d344-4449-861c-88baa1aa8560: 0d1a7032-8e15-4c0b-b798-809a6ef93860
+    - 4bf0a541-ec05-4b49-9d2f-e801678288eb: 7010d2f8-5b36-42b0-a8b4-1daf382078ac
+    - 8947c8ad-c181-4067-bc75-fa001ae68fb4: 7f6db16f-f64f-46fc-8822-53848f530eab
+    - 945136ce-bc0f-4681-98fe-4699ac2dccec: 7204b90a-819a-4208-bcb4-8b5b37098b02
+    - 9693df05-cf9b-4970-9a9f-f03fe31a170d: bd1d13a9-1846-4c04-b912-17a0e4ddfb08
+    - a35f5c8b-211a-45e1-9ea9-5b8294fa0843: 8e0bad92-a134-4cdf-8580-3f7ee0a229c9
+    - a599b41c-beda-495b-8001-9cf782c619c1: 02f5f9d1-991b-4d55-9b71-5210753d5247
+    - dd7373be-c96d-4464-99a4-d6399b96bc43: 7de2abda-0eca-4286-8140-1ff172598974
+    - df9dda3c-111a-42cb-806a-44290cb4689f: 1a112a33-e4e9-4c8c-b78e-0a9e77175fa1
+  SourceState: !<own> 2b28a3a1-de81-4888-aa84-67759175a047

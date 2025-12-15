@@ -1,0 +1,68 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 62
+    values:
+      - 2Dchangecontroller.js
+      - 3Dchangecontroller.js
+      - Base.png
+      - Box.mesh
+      - Capsule.mesh
+      - Color Correction.mat
+      - Empty.png
+      - Image 2.mat
+      - Image 3.mat
+      - "Image Marker [EDIT_ME] 2.imgmarker"
+      - "Image Marker [EDIT_ME].imgmarker"
+      - Image.mat
+      - ImageMaterial.mat
+      - MYSLIDER.ts
+      - Marker Cube.lspkg
+      - Marker Cube.lspkg/Marker_Cube_PUT_UNDER_MAIN_CAM__PLACE_IN_SCENE.prefab
+      - Marker Cube.lspkg/Materials
+      - Marker Cube.lspkg/Materials/Graph Matte Shadow.mat
+      - Marker Cube.lspkg/Materials/Occluder.mat
+      - Marker Cube.lspkg/Materials/Uber PBR.mat
+      - Marker Cube.lspkg/Meshes
+      - Marker Cube.lspkg/Meshes/Box.mesh
+      - Marker Cube.lspkg/Meshes/Plane.mesh
+      - Marker Cube.lspkg/Scripts
+      - Marker Cube.lspkg/Scripts/EnableLightShadows.js
+      - Marker Cube.lspkg/Shaders
+      - Marker Cube.lspkg/Shaders/Graph Matte Shadow.ss_graph
+      - Marker Cube.lspkg/Shaders/Occluder.ss_graph
+      - Marker Cube.lspkg/Shaders/Uber PBR1.ss_graph
+      - Marker Cube.lspkg/Textures
+      - Marker Cube.lspkg/Textures/Base.png
+      - Marker Cube.lspkg/Textures/MaterialParams.png
+      - Marker Cube.lspkg/Textures/Normal.png
+      - Marker Cube.lspkg/Textures/image.jpg
+      - "Marker Cube.lspkg/image_marker [EDIT_ME].imgmarker"
+      - Marker Cube.lspkg/package.native
+      - MaterialParams.png
+      - Normal.png
+      - PBR 2.mat
+      - PBR.mat
+      - ScreenTexture.screenTexture
+      - Slider.lsc
+      - Snapcode Marker.scmarker
+      - UI Button.lsc
+      - color_correction.ss_graph
+      - frame 2.png
+      - frame.png
+      - gud shit1.png
+      - image_unlit.ss_graph
+      - onButtonChange.js
+      - onOslilderchange.js
+      - onZsliderchange.js
+      - pbr.ss_graph
+      - rotated-image.png
+      - scene/.hidden/color_16089887.ss_graph
+      - scene/Materials/color_16089887.mat
+      - scene/Materials/color_16754264.mat
+      - scene/Meshes/Object_0.mesh
+      - scene/Meshes/Object_1.mesh
+      - scene/Meshes/Object_2.mesh
+      - scene/Meshes/Object_3.mesh
+      - scene/scene.prefab
+  options: 4

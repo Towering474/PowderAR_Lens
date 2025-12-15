@@ -1,0 +1,57 @@
+- !<AssetImportMetadata/b89916c5-7275-4fd8-9242-038768fa5d3f>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 3920aba2-85f1-4e63-9a69-526113e73178
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 3920aba2-85f1-4e63-9a69-526113e73178
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 703e5c5d-92ad-47fa-bafc-c918b2f35a4c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/126b53a8-a409-4f3f-b290-d9c0d5751efe>
+  PrefabRemaps:
+    []
+  Name: Color_Adjust__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2cd60e44-201c-44d7-a085-6109055faa44
+- !<PostEffectVisual/2cd60e44-201c-44d7-a085-6109055faa44>
+  PrefabRemaps:
+    []
+  Name: Post Effect
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6850805e-475c-484e-931d-e43884c87ab1
+- !<ObjectPrefabAssetData/703e5c5d-92ad-47fa-bafc-c918b2f35a4c>
+  SourceRemaps:
+    - 3920aba2-85f1-4e63-9a69-526113e73178: 71c42069-e835-4cfa-8905-8a4e44ac830f
+    - ac84a911-9982-4c46-8a9d-097fd6808df7: 126b53a8-a409-4f3f-b290-d9c0d5751efe
+    - d216639b-1f63-45a4-b8e7-64e89b34068e: 2cd60e44-201c-44d7-a085-6109055faa44
+  SourceState: !<own> 71c42069-e835-4cfa-8905-8a4e44ac830f
+- !<ObjectPrefab/71c42069-e835-4cfa-8905-8a4e44ac830f>
+  PackagePath: ""
+  objects:
+    - !<own> 126b53a8-a409-4f3f-b290-d9c0d5751efe
+  LazyLoading: false
+  RetainAssets: true

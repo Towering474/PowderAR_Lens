@@ -1,0 +1,10 @@
+- !<AssetCache>
+  AssetFiles:
+    2fb7dc0f-da3b-498b-9b66-1238eb16c3ab: 30a71958-aba7-4d54-abce-4b5642e7c8e1/96a01a6797fd28eddbee398c3733fb0a/Data/orange_frosting.zip
+  Assets:
+    - !<BinAsset/2fb7dc0f-da3b-498b-9b66-1238eb16c3ab>
+      PackagePath: ""
+  SourceHash: 96a01a6797fd28eddbee398c3733fb0a
+  FileHash: 44ea19f9122d790249bac2a3b97a7ef0
+  NativePackageItems:
+    []

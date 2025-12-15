@@ -1,0 +1,122 @@
+- !<AssetCache>
+  AssetFiles:
+    {}
+  Assets:
+    []
+  SourceHash: 6e930fc4daf182634fbc6ce5f275e322
+  FileHash: 07a90b3c0f4ea8118eb981a702659aca
+  NativePackageItems:
+    - !<own> bcc65740-6085-8e09-a230-ba06e4506d7c
+    - !<own> e17e2ebf-0184-0a89-9454-ede0780176e8
+    - !<own> 8de90a6c-3533-be19-cdfb-072695fd2b46
+- !<ScriptAssetData/6801356c-cb77-4797-89de-bd25b0a97687>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: |-
+    Exposes various touch events to the lens controller.
+    - Tap
+    - Double Tap
+    - Touch Down
+    - Touch Move
+    - Touch Up
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6d10fab1-f06e-460f-84b5-83d29ed9f128
+  ExportUid: bf543038-a829-42f5-8a35-c48552d1a325
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    allowDoubleTap: false
+    blockDefaultTouches: false
+    enableHint: true
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - blockDefaultTouches: false
+      allowDoubleTap: false
+      enableHint: false
+  ScriptTypes:
+    -
+      {}
+- !<AssetImportMetadata/8de90a6c-3533-be19-cdfb-072695fd2b46>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 5a2f2b64-d1f5-43a1-aa4e-37987f02a29f
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 5a2f2b64-d1f5-43a1-aa4e-37987f02a29f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 6801356c-cb77-4797-89de-bd25b0a97687
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/bcc65740-6085-8e09-a230-ba06e4506d7c>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 2d44afe3-ab88-4a1a-814a-369f1a645b06
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 2d44afe3-ab88-4a1a-814a-369f1a645b06
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> fa362fd5-e6ac-4eb1-aa77-909c0f899798
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/e17e2ebf-0184-0a89-9454-ede0780176e8>
+  ImportedAssetIds:
+    NativePackageDescriptor: !<reference> 879152b5-56d2-410e-9209-72fd9a8f6cb8
+  ImporterName: NativePackageDescriptorImporter
+  PrimaryAsset: !<reference> 879152b5-56d2-410e-9209-72fd9a8f6cb8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fa362fd5-e6ac-4eb1-aa77-909c0f899798>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: d4438c19-3a29-fe85-2395-20430dd09eb5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    {}
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    -
+      {}
+  ScriptTypes:
+    -
+      {}

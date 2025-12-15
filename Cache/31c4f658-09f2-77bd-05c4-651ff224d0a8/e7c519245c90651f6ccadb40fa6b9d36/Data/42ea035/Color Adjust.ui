@@ -1,0 +1,131 @@
+{ 
+	"ui": 
+	[
+		{
+        	"label": "Graph Parameters",
+        	"widget": "group_start"
+        },
+{ 
+                	"bindingName": "Texture", 
+                	"label":       "Texture", 
+                	"widget":      "texture_group",
+                	"sortIndex":   "0",
+                	"hint":        ""
+                },
+                
+                {
+                	"bindingName": "Tweak_N29",
+                	"label":       "Hue",
+                	"widget":      "slider",
+                	"min":         -180,
+                	"max":         180,
+                	"step":        "0.01",
+                	"sortIndex":   "1",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "Tweak_N28",
+                	"label":       "Saturation",
+                	"widget":      "slider",
+                	"min":         -100,
+                	"max":         100,
+                	"step":        "0.01",
+                	"sortIndex":   "2",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "Tweak_N27",
+                	"label":       "Lightness",
+                	"widget":      "slider",
+                	"min":         -50,
+                	"max":         50,
+                	"step":        "0.01",
+                	"sortIndex":   "3",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "Tweak_N15",
+                	"label":       "Contrast",
+                	"widget":      "slider",
+                	"min":         0,
+                	"max":         2,
+                	"step":        "0.01",
+                	"sortIndex":   "4",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "Tweak_N21",
+                	"label":       "Brightness",
+                	"widget":      "slider",
+                	"min":         0,
+                	"max":         5,
+                	"step":        "0.01",
+                	"sortIndex":   "5",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "Tweak_N8",
+                	"bindingType": "define",
+                	"optimize":    true,
+                	"label":       "Invert",
+                	"widget":      "checkbox",
+                	"sortIndex":   "6",
+                	"hint":        ""
+                },
+                
+                {
+                	"bindingName": "Tweak_N19",
+                	"bindingType": "define",
+                	"optimize":    true,
+                	"label":       "HDR",
+                	"widget":      "checkbox",
+                	"sortIndex":   "7",
+                	"hint":        ""
+                },
+                
+                {
+                	"bindingName": "Tweak_N20",
+                	"label":       "HDR Strenght",
+                	"widget":      "slider",
+                	"min":         0,
+                	"max":         10,
+                	"step":        "0.01",
+                	"sortIndex":   "8",
+                	"hint":        "",
+                	"default":     "6.0"
+                },
+
+        {
+        	"widget": "group_end"
+        },
+        
+		
+	{
+		"bindingName": "alphaTestThreshold",
+		"widget": "slider",
+		"min" : 0.0,
+		"max" : 1.0,
+		"step": 0.001,
+		"default": 0.5,
+		"hint": "When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear."
+	}
+	
+	],
+	
+	"shaderType": "Mesh3d",
+	
+	"extraDefines":
+	[
+		"SC_ENABLE_RT_CASTER"
+	]
+}

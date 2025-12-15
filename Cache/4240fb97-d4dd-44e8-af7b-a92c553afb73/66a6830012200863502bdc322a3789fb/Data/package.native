@@ -1,0 +1,35 @@
+- !<NativePackageDescriptor/b24cf769-03dd-44b8-8a99-5be616f1e1af>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 14
+    patch: 0
+    build: 25091606
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: This post effect includes all color adjustment sliders, allowing you to modify the hue, saturation, brightness, contrast, and lightness of a specific range of colors in an image or concurrently adjust all colors, as well as HDR and invert options.
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 75
+  ExportUid: 5994f5a8-9e7f-44d8-a895-5ca9ef059054
+  ComponentUid: 3c2d5a4b-a23d-4c24-936a-5f3a746cd76e
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0
+  PackagePolicy: CanBeUnpackedTransparent
+  coreVersion: 328
+  clientVersion: 13.5799999

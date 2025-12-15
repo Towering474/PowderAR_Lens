@@ -1,0 +1,10 @@
+- !<AssetCache>
+  AssetFiles:
+    389ceb25-5e4b-419d-aaf8-c2e0aaabc958: 3c5adbb3-de75-4487-930f-4436062f9005/8c2ff48bff12758d0cbf477ba1906a8e/Data/Orange_frosting.usdz
+  Assets:
+    - !<BinAsset/389ceb25-5e4b-419d-aaf8-c2e0aaabc958>
+      PackagePath: ""
+  SourceHash: 8c2ff48bff12758d0cbf477ba1906a8e
+  FileHash: 4645c3d5d443a6720be70154108bb9e4
+  NativePackageItems:
+    []

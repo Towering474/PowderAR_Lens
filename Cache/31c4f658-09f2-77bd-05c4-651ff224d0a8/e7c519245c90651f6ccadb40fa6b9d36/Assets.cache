@@ -1,0 +1,263 @@
+- !<AssetCache>
+  AssetFiles:
+    0da5011a-aa49-4811-a8ed-e425484acc42: 31c4f658-09f2-77bd-05c4-651ff224d0a8/e7c519245c90651f6ccadb40fa6b9d36/Data/Color Adjust.ss_graph
+  Assets:
+    - !<ShaderGraphPass/0da5011a-aa49-4811-a8ed-e425484acc42>
+      PackagePath: ""
+      DefaultDefines:
+        []
+      DefaultProperties:
+        Port_Color_N002:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_Depth_N004:
+          typeIdx: 1
+          value: 1.000000
+        Port_FinalColor1_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor2_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor3_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_GSplatPointSize_N004:
+          typeIdx: 1
+          value: 0.000000
+        Port_GSplatRotation_N004:
+          typeIdx: 5
+          value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+        Port_GSplatScale_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_Import_N041:
+          typeIdx: 3
+          value: {x: 0.000100, y: 0.000100}
+        Port_Input0_N026:
+          typeIdx: 5
+          value: {x: 0.500000, y: 0.500000, z: 0.500000, w: 0.000000}
+        Port_Input1_N006:
+          typeIdx: 1
+          value: 0.010000
+        Port_Input1_N007:
+          typeIdx: 1
+          value: 0.010000
+        Port_Input1_N039:
+          typeIdx: 1
+          value: 0.700000
+        Port_Input1_N057:
+          typeIdx: 5
+          value: {x: 0.501961, y: 0.501961, z: 0.501961, w: 0.000000}
+        Port_Input2_N054:
+          typeIdx: 1
+          value: 0.840000
+        Port_Item0_N049:
+          typeIdx: 3
+          value: {x: 1.016200, y: 0.420900}
+        Port_Item1_N049:
+          typeIdx: 3
+          value: {x: 0.420900, y: 1.016200}
+        Port_Item2_N049:
+          typeIdx: 3
+          value: {x: -0.420900, y: 1.016200}
+        Port_Item3_N049:
+          typeIdx: 3
+          value: {x: -1.016200, y: 0.420900}
+        Port_Item4_N049:
+          typeIdx: 3
+          value: {x: -1.016200, y: -0.420900}
+        Port_Item5_N049:
+          typeIdx: 3
+          value: {x: -0.420900, y: -1.016200}
+        Port_Item6_N049:
+          typeIdx: 3
+          value: {x: 0.420900, y: -1.016200}
+        Port_Item7_N049:
+          typeIdx: 3
+          value: {x: 1.016200, y: -0.420900}
+        Port_LODValue_N032:
+          typeIdx: 1
+          value: 0.000000
+        Port_PrevWorldPosition_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_RangeMaxA_N001:
+          typeIdx: 1
+          value: 180.000000
+        Port_RangeMaxB_N001:
+          typeIdx: 1
+          value: 0.500000
+        Port_RangeMinA_N001:
+          typeIdx: 1
+          value: -180.000000
+        Port_RangeMinB_N001:
+          typeIdx: 1
+          value: -0.500000
+        Port_RayDirection_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 1.000000, z: 0.000000}
+        Port_RayOrigin_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_Value4_N011:
+          typeIdx: 1
+          value: 0.000000
+        Port_WorldNormal_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 1.000000, z: 0.000000}
+        Port_WorldPosition_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_WorldTangent_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 1.000000}
+      PassUiData: !<PassUiData>
+        ExtraDefines:
+          - SC_ENABLE_RT_CASTER
+        PassBindings:
+          - mLabel: Graph Parameters
+            mType: Invalid
+            mName: ""
+            mWidget: group_start
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: Texture
+            mWidget: texture_group
+            mHint: "Property: Texture"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Hue
+            mType: Property
+            mName: Tweak_N29
+            mWidget: slider
+            mHint: "Property: Tweak_N29"
+            mMin: -180.000000
+            mMax: 180.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Saturation
+            mType: Property
+            mName: Tweak_N28
+            mWidget: slider
+            mHint: "Property: Tweak_N28"
+            mMin: -100.000000
+            mMax: 100.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Lightness
+            mType: Property
+            mName: Tweak_N27
+            mWidget: slider
+            mHint: "Property: Tweak_N27"
+            mMin: -50.000000
+            mMax: 50.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Contrast
+            mType: Property
+            mName: Tweak_N15
+            mWidget: slider
+            mHint: "Property: Tweak_N15"
+            mMin: 0.000000
+            mMax: 2.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Brightness
+            mType: Property
+            mName: Tweak_N21
+            mWidget: slider
+            mHint: "Property: Tweak_N21"
+            mMin: 0.000000
+            mMax: 5.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Invert
+            mType: Define
+            mName: Tweak_N8
+            mWidget: checkbox
+            mHint: "Define: Tweak_N8"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: HDR
+            mType: Define
+            mName: Tweak_N19
+            mWidget: checkbox
+            mHint: "Define: Tweak_N19"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: HDR Strenght
+            mType: Property
+            mName: Tweak_N20
+            mWidget: slider
+            mHint: "Property: Tweak_N20"
+            mMin: 0.000000
+            mMax: 10.000000
+            mStep: 0.010000
+            mDefaultVal: 6.000000
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ""
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Alpha Test Threshold
+            mType: Property
+            mName: alphaTestThreshold
+            mWidget: slider
+            mHint: |-
+              Property: alphaTestThreshold
+              
+              When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.001000
+            mDefaultVal: 0.500000
+            mValues:
+              []
+        ShaderType: Mesh3d
+      ShaderPath: 31c4f658-09f2-77bd-05c4-651ff224d0a8/e7c519245c90651f6ccadb40fa6b9d36/Data/42ea035/Color Adjust.glsl
+      Defines:
+        []
+      Properties:
+        {}
+  SourceHash: e7c519245c90651f6ccadb40fa6b9d36
+  FileHash: 383824182d0c36331962dfbdf7413a40
+  NativePackageItems:
+    []

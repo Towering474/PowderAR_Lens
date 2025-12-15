@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    76af15d8-c038-4989-8eb6-bf0f809c6e9f: aa237b22-0821-4944-b0b8-848a2a18d1f3/6fb199acd4bb884964a6831b1ec3bf83/Data/Empty.png
+  Assets:
+    - !<FileTexture/76af15d8-c038-4989-8eb6-bf0f809c6e9f>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 256
+        Height: 16
+  SourceHash: 6fb199acd4bb884964a6831b1ec3bf83
+  FileHash: 0a06ef1aae1d17d10e8f288b61982328
+  NativePackageItems:
+    []

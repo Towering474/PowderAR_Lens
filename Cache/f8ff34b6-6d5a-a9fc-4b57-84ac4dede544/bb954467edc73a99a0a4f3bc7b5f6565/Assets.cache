@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    d2bdd918-ca5c-432d-8242-114cf0d7d77b: f8ff34b6-6d5a-a9fc-4b57-84ac4dede544/bb954467edc73a99a0a4f3bc7b5f6565/Data/Roboto.png
+  Assets:
+    - !<FileTexture/d2bdd918-ca5c-432d-8242-114cf0d7d77b>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 320
+        Height: 320
+  SourceHash: bb954467edc73a99a0a4f3bc7b5f6565
+  FileHash: ca5163f98af3743ee691d4ada87b0083
+  NativePackageItems:
+    []

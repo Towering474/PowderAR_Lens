@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    9817e758-89f6-4071-9d94-aae299d48738: eefaf446-f730-bf36-912f-ddbf858d75f0/361da8a09111cb41d9fdb4b174e0fee5/Data/Lobster.png
+  Assets:
+    - !<FileTexture/9817e758-89f6-4071-9d94-aae299d48738>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 320
+        Height: 320
+  SourceHash: 361da8a09111cb41d9fdb4b174e0fee5
+  FileHash: 67daa6b53c84d6eb2abfce442811e706
+  NativePackageItems:
+    []

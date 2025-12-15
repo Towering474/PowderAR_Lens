@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    74b7e3c6-5c7e-4aec-aff4-9d7a4ce3d4ff: 6f4966de-0323-4d70-83d6-dd194a8c6b30/1a50e26dd5374765d98263644cb458c2/Data/rotated-image.png
+  Assets:
+    - !<FileTexture/74b7e3c6-5c7e-4aec-aff4-9d7a4ce3d4ff>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 200
+        Height: 129
+  SourceHash: 1a50e26dd5374765d98263644cb458c2
+  FileHash: 13f3ccb5c66e8edbb527e2b6ae364a6a
+  NativePackageItems:
+    []

@@ -1,0 +1,29 @@
+- !<NativePackageDescriptor/879152b5-56d2-410e-9209-72fd9a8f6cb8>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 14
+    patch: 0
+    build: 25091606
+    type: Unset
+  Description: "Exposes various touch events to the lens controller.\n- Tap\n- Double Tap\n- Touch Down\n- Touch Move\n- Touch Up"
+  SvgIcon: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 75
+  ExportUid: bf543038-a829-42f5-8a35-c48552d1a325
+  ComponentUid: 6d10fab1-f06e-460f-84b5-83d29ed9f128
+  Instantiable: !<reference> 5a2f2b64-d1f5-43a1-aa4e-37987f02a29f
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0
+  PackagePolicy: CanBeUnpacked
+  coreVersion: 328
+  clientVersion: 13.5799999

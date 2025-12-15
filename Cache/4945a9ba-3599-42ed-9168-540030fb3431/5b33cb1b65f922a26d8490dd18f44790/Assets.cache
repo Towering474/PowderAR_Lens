@@ -1,0 +1,10 @@
+- !<AssetCache>
+  AssetFiles:
+    85ee1047-5686-411c-afcb-4d2d6695bece: 4945a9ba-3599-42ed-9168-540030fb3431/5b33cb1b65f922a26d8490dd18f44790/Data/Pangolin-Regular.ttf
+  Assets:
+    - !<Font/85ee1047-5686-411c-afcb-4d2d6695bece>
+      PackagePath: ""
+  SourceHash: 5b33cb1b65f922a26d8490dd18f44790
+  FileHash: 1c2740450e00110d3138a2dcdb73e1dc
+  NativePackageItems:
+    []

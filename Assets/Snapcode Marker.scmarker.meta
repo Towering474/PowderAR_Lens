@@ -1,0 +1,16 @@
+- !<AssetImportMetadata/52dfed6b-a2c8-4079-8707-df482b64d248>
+  ImportedAssetIds:
+    SnapcodeMarker: !<reference> d3344569-e5e0-469c-8966-65f4406bc6e4
+  ImporterName: SnapcodeMarkerImporter
+  PrimaryAsset: !<reference> d3344569-e5e0-469c-8966-65f4406bc6e4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

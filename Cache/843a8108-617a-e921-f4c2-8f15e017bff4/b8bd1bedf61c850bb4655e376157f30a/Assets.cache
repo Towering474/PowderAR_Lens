@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    a46c0aa9-7160-4395-9619-dfd195bc7773: 843a8108-617a-e921-f4c2-8f15e017bff4/b8bd1bedf61c850bb4655e376157f30a/Data/Pangolin.png
+  Assets:
+    - !<FileTexture/a46c0aa9-7160-4395-9619-dfd195bc7773>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 320
+        Height: 320
+  SourceHash: b8bd1bedf61c850bb4655e376157f30a
+  FileHash: ff82b004515095ec41051a65c0be7f63
+  NativePackageItems:
+    []

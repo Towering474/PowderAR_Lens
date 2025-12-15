@@ -1,0 +1,134 @@
+- !<AssetCache>
+  AssetFiles:
+    {}
+  Assets:
+    []
+  SourceHash: 66a6830012200863502bdc322a3789fb
+  FileHash: 619a10f51d8e658ddd57b16d3eb459a6
+  NativePackageItems:
+    - !<own> 963acbb0-51a1-e142-437f-b8a366ec9f8e
+    - !<own> 561686e2-8e6e-29cd-e11a-32efd1629899
+    - !<own> 0c90dc2f-bb19-aa8f-7669-4811d6085f1b
+    - !<own> 7a4f8f0a-3e13-86c1-c1c3-6cf27fac862e
+    - !<own> 31c4f658-09f2-77bd-05c4-651ff224d0a8
+- !<AssetImportMetadata/0c90dc2f-bb19-aa8f-7669-4811d6085f1b>
+  ImportedAssetIds:
+    NativePackageDescriptor: !<reference> b24cf769-03dd-44b8-8a99-5be616f1e1af
+  ImporterName: NativePackageDescriptorImporter
+  PrimaryAsset: !<reference> b24cf769-03dd-44b8-8a99-5be616f1e1af
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/126b53a8-a409-4f3f-b290-d9c0d5751efe>
+  PrefabRemaps:
+    []
+  Name: Color_Adjust__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2cd60e44-201c-44d7-a085-6109055faa44
+- !<PostEffectVisual/2cd60e44-201c-44d7-a085-6109055faa44>
+  PrefabRemaps:
+    []
+  Name: Post Effect
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6850805e-475c-484e-931d-e43884c87ab1
+- !<AssetImportMetadata/31c4f658-09f2-77bd-05c4-651ff224d0a8>
+  ImportedAssetIds:
+    ShaderGraph: !<reference> 0da5011a-aa49-4811-a8ed-e425484acc42
+  ImporterName: ShaderGraphPassImporter
+  PrimaryAsset: !<reference> 0da5011a-aa49-4811-a8ed-e425484acc42
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/561686e2-8e6e-29cd-e11a-32efd1629899>
+  ImportedAssetIds:
+    Material: !<reference> 6850805e-475c-484e-931d-e43884c87ab1
+  ImporterName: MaterialImporter
+  PrimaryAsset: !<reference> 6850805e-475c-484e-931d-e43884c87ab1
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/703e5c5d-92ad-47fa-bafc-c918b2f35a4c>
+  SourceRemaps:
+    - 3920aba2-85f1-4e63-9a69-526113e73178: 71c42069-e835-4cfa-8905-8a4e44ac830f
+    - ac84a911-9982-4c46-8a9d-097fd6808df7: 126b53a8-a409-4f3f-b290-d9c0d5751efe
+    - d216639b-1f63-45a4-b8e7-64e89b34068e: 2cd60e44-201c-44d7-a085-6109055faa44
+  SourceState: !<own> 71c42069-e835-4cfa-8905-8a4e44ac830f
+- !<ObjectPrefab/71c42069-e835-4cfa-8905-8a4e44ac830f>
+  PackagePath: ""
+  objects:
+    - !<own> 126b53a8-a409-4f3f-b290-d9c0d5751efe
+  LazyLoading: false
+  RetainAssets: true
+- !<AssetImportMetadata/7a4f8f0a-3e13-86c1-c1c3-6cf27fac862e>
+  ImportedAssetIds:
+    Texture: !<reference> 3c9034c7-0ada-4630-ae85-b9ccefdd256c
+  ImporterName: ScreenTextureImporter
+  PrimaryAsset: !<reference> 3c9034c7-0ada-4630-ae85-b9ccefdd256c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/963acbb0-51a1-e142-437f-b8a366ec9f8e>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 3920aba2-85f1-4e63-9a69-526113e73178
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 3920aba2-85f1-4e63-9a69-526113e73178
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 703e5c5d-92ad-47fa-bafc-c918b2f35a4c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

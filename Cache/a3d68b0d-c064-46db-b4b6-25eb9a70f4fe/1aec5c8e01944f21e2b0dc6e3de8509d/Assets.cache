@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    ea8f6a2a-6b6a-432f-9bda-ee21f159baa7: a3d68b0d-c064-46db-b4b6-25eb9a70f4fe/1aec5c8e01944f21e2b0dc6e3de8509d/Data/gud shit1.png
+  Assets:
+    - !<FileTexture/ea8f6a2a-6b6a-432f-9bda-ee21f159baa7>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 480
+        Height: 480
+  SourceHash: 1aec5c8e01944f21e2b0dc6e3de8509d
+  FileHash: bfa5184ca5b9cc0ea243e69f62c647de
+  NativePackageItems:
+    []

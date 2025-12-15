@@ -1,0 +1,280 @@
+- !<AssetCache>
+  AssetFiles:
+    {}
+  Assets:
+    []
+  SourceHash: 9764eabeaba84990df200727cbb8d919
+  FileHash: 167c4dfb1076523d43364942a70354c3
+  NativePackageItems:
+    - !<own> 7a16090f-6921-d8e1-31e4-827ed9354a29
+    - !<own> aaa90333-cfc8-4a8f-0503-13d5a4422180
+    - !<own> 13b86772-7630-d42a-d814-24852632aead
+    - !<own> d9f4c422-a50d-419f-06f7-2b350287306c
+    - !<own> d85f89f8-9024-7a9f-094e-aa41ff35ed12
+    - !<own> 26d2e4cf-b33e-cd6f-20f8-934f7c14b57c
+    - !<own> e572c71c-d943-4f90-acce-ec66ab0c18ce
+    - !<own> f2164554-d0eb-0fac-e2d3-998ba688d5b1
+- !<AssetImportMetadata/13b86772-7630-d42a-d814-24852632aead>
+  ImportedAssetIds:
+    Material: !<reference> fbac4899-beab-46f3-a7a4-15ef9ad13444
+  ImporterName: MaterialImporter
+  PrimaryAsset: !<reference> fbac4899-beab-46f3-a7a4-15ef9ad13444
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/1c89e2e9-d3fb-4b8d-8e02-5d34aa8519e5>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 51c23303-b7fd-41b1-97a2-0803f68b06a2
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    markerTrackingComponent: false
+    onMarkerFoundGlobalBehaviors: false
+    onMarkerLostGlobalBehaviors: false
+    resizeObjectArray: false
+    sendTriggers: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - markerTrackingComponent: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      resizeObjectArray: !<reference.SceneObject[]>
+        []
+      sendTriggers: false
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    -
+      {}
+- !<SceneObject/224cc066-0bab-42be-aa2f-1580742c06b2>
+  PrefabRemaps:
+    []
+  Name: Marker_Image_PUT_UNDER_MAIN_CAM__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9f5e50e8-c96e-4d61-a2b1-a59392c2b80c
+  Components:
+    - !<own> 70ed2716-5fdb-4a6b-b79b-a5299f4da3de
+    - !<own> 9059f1ff-83c4-48a4-8f10-74c13b13c3f3
+- !<AssetImportMetadata/26d2e4cf-b33e-cd6f-20f8-934f7c14b57c>
+  ImportedAssetIds:
+    ShaderGraph: !<reference> 0d372ace-f97c-4d3e-8a9e-8834072d9887
+  ImporterName: ShaderGraphPassImporter
+  PrimaryAsset: !<reference> 0d372ace-f97c-4d3e-8a9e-8834072d9887
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/3ac5731b-d4f2-4409-8bed-fd181ce6d8df>
+  PackagePath: ""
+  objects:
+    - !<own> 224cc066-0bab-42be-aa2f-1580742c06b2
+  LazyLoading: false
+  RetainAssets: true
+- !<Image/622eb17d-f6de-44ce-a71d-ac91a2dcc6fa>
+  PrefabRemaps:
+    []
+  Name: Image 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> fbac4899-beab-46f3-a7a4-15ef9ad13444
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<MarkerTrackingComponent/70ed2716-5fdb-4a6b-b79b-a5299f4da3de>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 6361001f-d36b-456a-a889-bfd8bae2a4bd
+- !<AssetImportMetadata/7a16090f-6921-d8e1-31e4-827ed9354a29>
+  ImportedAssetIds:
+    ImageMarker: !<reference> 6361001f-d36b-456a-a889-bfd8bae2a4bd
+  ImporterName: ImageMarkerImporter
+  PrimaryAsset: !<reference> 6361001f-d36b-456a-a889-bfd8bae2a4bd
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/9059f1ff-83c4-48a4-8f10-74c13b13c3f3>
+  PrefabRemaps:
+    []
+  Name: ImageTrackingController
+  Enabled: true
+  ScriptAsset: !<reference> dac2fa4e-5466-4709-8896-b66b3744605d
+  ScriptInputsDefault:
+    onMarkerFoundGlobalBehaviors: true
+    onMarkerLostGlobalBehaviors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerTrackingComponent: !<reference.MarkerTrackingComponent> 70ed2716-5fdb-4a6b-b79b-a5299f4da3de
+      resizeObjectArray: !<reference.SceneObject[]>
+        - !<reference> 9f5e50e8-c96e-4d61-a2b1-a59392c2b80c
+      sendTriggers: true
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/9f5e50e8-c96e-4d61-a2b1-a59392c2b80c>
+  PrefabRemaps:
+    []
+  Name: "Tracked Image [REPLACE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 622eb17d-f6de-44ce-a71d-ac91a2dcc6fa
+- !<AssetImportMetadata/aaa90333-cfc8-4a8f-0503-13d5a4422180>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> b3ae4acb-3696-40ed-941d-a1a8640aabdd
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> b3ae4acb-3696-40ed-941d-a1a8640aabdd
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> e37b81b5-0482-477a-ab19-97fbb8f40b29
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/d85f89f8-9024-7a9f-094e-aa41ff35ed12>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> dac2fa4e-5466-4709-8896-b66b3744605d
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> dac2fa4e-5466-4709-8896-b66b3744605d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 1c89e2e9-d3fb-4b8d-8e02-5d34aa8519e5
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/d9f4c422-a50d-419f-06f7-2b350287306c>
+  ImportedAssetIds:
+    NativePackageDescriptor: !<reference> 1d10e6e1-f2e9-47ca-8bbc-894adaa02b18
+  ImporterName: NativePackageDescriptorImporter
+  PrimaryAsset: !<reference> 1d10e6e1-f2e9-47ca-8bbc-894adaa02b18
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/e37b81b5-0482-477a-ab19-97fbb8f40b29>
+  SourceRemaps:
+    - 1d70cf4f-fc24-4e34-8c38-a5eb2e42dbac: 70ed2716-5fdb-4a6b-b79b-a5299f4da3de
+    - 1f1b7142-0f82-4d60-badb-1d4c00f431cc: 9059f1ff-83c4-48a4-8f10-74c13b13c3f3
+    - 503a6b71-3442-490d-9fb4-9321f8bd56ca: 622eb17d-f6de-44ce-a71d-ac91a2dcc6fa
+    - 9d0c57b4-5921-40fe-9dcd-a9d3f1b457ad: 224cc066-0bab-42be-aa2f-1580742c06b2
+    - b3ae4acb-3696-40ed-941d-a1a8640aabdd: 3ac5731b-d4f2-4409-8bed-fd181ce6d8df
+    - cfb0f300-a8ee-42bf-9dde-20abc1c8b131: 9f5e50e8-c96e-4d61-a2b1-a59392c2b80c
+  SourceState: !<own> 3ac5731b-d4f2-4409-8bed-fd181ce6d8df
+- !<AssetImportMetadata/e572c71c-d943-4f90-acce-ec66ab0c18ce>
+  ImportedAssetIds:
+    Texture: !<reference> 47835641-0dfc-4438-94d1-5799880ff80c
+  ImporterName: FileTextureImporter
+  PrimaryAsset: !<reference> 47835641-0dfc-4438-94d1-5799880ff80c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<SingleCompressionSettings>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/f2164554-d0eb-0fac-e2d3-998ba688d5b1>
+  ImportedAssetIds:
+    Texture: !<reference> c119d7f9-946d-45eb-ac9d-ab5926b2b633
+  ImporterName: FileTextureImporter
+  PrimaryAsset: !<reference> c119d7f9-946d-45eb-ac9d-ab5926b2b633
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<SingleCompressionSettings>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
