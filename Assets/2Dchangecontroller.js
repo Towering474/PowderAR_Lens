@@ -1,4 +1,7 @@
 //@input Component.Image image
+//@input Asset.Texture texture0
+//@input Asset.Texture texture1
+//@input Asset.Texture texture2
 
 // Update function that others can call
 script.updateImage = function(opacityValue, zValue) {
@@ -37,6 +40,22 @@ script.updateVisibility = function(toggle) {
     // Enable/Disable the image SceneObject
     if (script.getSceneObject()) {
         script.getSceneObject().enabled = toggle;
+    } else {
+        print("❌ No SceneObject found on this script!");
+    }
+    
+};
+
+
+// Update function that others can call
+script.updateTexture = function(number) {
+
+    if (number == 0) {
+        script.image.mainPass.baseTex = script.texture0;
+    } else if (number == 1) {
+        script.image.mainPass.baseTex = script.texture1;
+    } else if (number == 2) {
+        script.image.mainPass.baseTex = script.texture2;
     } else {
         print("❌ No SceneObject found on this script!");
     }

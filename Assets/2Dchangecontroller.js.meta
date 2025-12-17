@@ -27,6 +27,9 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     image: false
+    texture0: false
+    texture1: false
+    texture2: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -37,6 +40,9 @@
     []
   DefaultScriptInputs:
     - image: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      texture0: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      texture1: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      texture2: !<reference.Texture> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
