@@ -696,7 +696,7 @@
   PrefabRemaps:
     []
   Name: 3D Pattern
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 2.000000}
@@ -1094,6 +1094,9 @@
   ScriptInputs:
     "":
       image: !<reference.Image> b37c4731-3726-471a-9c64-66f7e40c587a
+      texture0: !<reference.Texture> 74b7e3c6-5c7e-4aec-aff4-9d7a4ce3d4ff
+      texture1: !<reference.Texture> 79e97ffa-f3e6-4c26-93cc-4158f490b307
+      texture2: !<reference.Texture> 0140dcb2-e88a-4598-be33-a5240211c8ae
   ScriptTypes:
     "":
       {}

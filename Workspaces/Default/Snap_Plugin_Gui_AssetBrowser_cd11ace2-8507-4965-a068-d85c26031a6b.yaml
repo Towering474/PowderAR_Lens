@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 62
+    size: 64
     values:
       - 2Dchangecontroller.js
       - 3Dchangecontroller.js
@@ -56,6 +56,8 @@ CollapsedEntities:
       - onOslilderchange.js
       - onZsliderchange.js
       - pbr.ss_graph
+      - rotated-image-complex.png
+      - rotated-image-wavy.png
       - rotated-image.png
       - scene/.hidden/color_16089887.ss_graph
       - scene/Materials/color_16089887.mat
