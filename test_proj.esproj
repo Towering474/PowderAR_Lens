@@ -27,7 +27,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: Food Deco MobileAR
+  lensName: Expressive Powder
   lensDescriptors:
     - GEN_AI_ICON
   lensApplicability:
@@ -36,7 +36,7 @@ metaInfo:
   lensClientCompatibilities:
     - CameraKit
   platformBundlesEnabled: false
-  iconHash: 0dd456225dd1a2d2c4d2270bffebf950
+  iconHash: aba5f5ca7965977acbfaecb3b4e6d2df
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.14.0.25091606

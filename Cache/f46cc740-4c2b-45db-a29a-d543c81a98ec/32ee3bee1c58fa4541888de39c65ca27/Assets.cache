@@ -861,8 +861,8 @@
     - '// @input string[] onValueChangedCustomTriggers {"showIf":"callbackType", "showIfValue":2}'
     - /*
     - "@typedef CustomFunctions"
-    - "@property {Component.ScriptComponent} script "
-    - "@property {string} function "
+    - "@property {Component.ScriptComponent} script"
+    - "@property {string} function"
     - "*/"
     - '// @input CustomFunctions[] onValueChangedFunctions {"showIf":"callbackType", "showIfValue":3}'
     - '// @ui {"widget":"group_end"}'

@@ -26,6 +26,7 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    buttonImageController: false
     buttonScript: false
     imageController: false
     objController: false
@@ -41,6 +42,7 @@
     - buttonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       imageController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       objController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      buttonImageController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

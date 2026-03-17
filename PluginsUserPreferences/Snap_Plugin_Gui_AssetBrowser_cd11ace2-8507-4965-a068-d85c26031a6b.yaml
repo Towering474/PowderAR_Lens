@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 64
+    size: 69
     values:
       - 2Dchangecontroller.js
       - 3Dchangecontroller.js
@@ -12,6 +12,7 @@ CollapsedEntities:
       - Empty.png
       - Image 2.mat
       - Image 3.mat
+      - Image 9.mat
       - "Image Marker [EDIT_ME] 2.imgmarker"
       - "Image Marker [EDIT_ME].imgmarker"
       - Image.mat
@@ -39,6 +40,7 @@ CollapsedEntities:
       - Marker Cube.lspkg/Textures/image.jpg
       - "Marker Cube.lspkg/image_marker [EDIT_ME].imgmarker"
       - Marker Cube.lspkg/package.native
+      - MarkerA3.png
       - MaterialParams.png
       - Normal.png
       - PBR 2.mat
@@ -55,6 +57,9 @@ CollapsedEntities:
       - onButtonChange.js
       - onOslilderchange.js
       - onZsliderchange.js
+      - pattern_crossgrid.png
+      - pattern_extras.png
+      - pattern_waves.png
       - pbr.ss_graph
       - rotated-image-complex.png
       - rotated-image-wavy.png

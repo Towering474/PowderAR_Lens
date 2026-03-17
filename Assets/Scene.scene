@@ -215,6 +215,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> e7159c70-5f57-401c-8523-bdf0051c4532
+    - !<own> 7ebf5472-c3ae-48cd-88c7-b51d2fcdb552
   Components:
     - !<own> f48201fe-08e5-4324-afdd-f144dd195491
 - !<RenderMeshVisual/0a0b6bd4-6ea9-43b1-bf20-df6f5ec84965>
@@ -331,7 +332,6 @@
     orientation: true
     startValue: true
     endValue: true
-    startSliderValue: true
     prefabSlider: true
     counterEnabled: true
     fractionDigits: true
@@ -352,7 +352,7 @@
       orientation: 0
       startValue: !<float> 0.000000
       endValue: !<float> 1.000000
-      startSliderValue: !<float> 0.000000
+      startSliderValue: !<float> 1.000000
       stepEnabled: true
       stepValue: 0.100000
       prefabSlider: !<reference.ObjectPrefab> 45ae60a7-5b4b-45c3-aa57-f208bfe06d0c
@@ -462,6 +462,25 @@
     - !<own> 46a14da7-2171-40b4-950b-3e13fc7b29ba
   Components:
     - !<own> eab075e2-2936-42e7-921d-e5a2f4e6d455
+- !<ScriptComponent/5a47942c-d24b-42ba-a9f3-8a9dd2415ff2>
+  PrefabRemaps:
+    []
+  Name: 2Dchangecontroller
+  Enabled: true
+  ScriptAsset: !<reference> 0d3ab584-cf4e-4b24-8ea4-08cac9c6407e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      image: !<reference.Image> a2c34e26-ca42-4ca9-b855-4f66ab2e516c
+      texture0: !<reference.Texture> 995c1031-64d6-4793-8007-43b8dda54e71
+      texture1: !<reference.Texture> d85147eb-103c-4489-8079-658dd0f25c33
+      texture2: !<reference.Texture> 346458b3-ae94-499d-88ed-57200759de7f
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/5ef211fe-20e7-45ac-babc-214c5c12d093>
   PrefabRemaps:
     []
@@ -536,6 +555,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/7ebf5472-c3ae-48cd-88c7-b51d2fcdb552>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  Layers: 2
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.440000, z: 1.440000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a2c34e26-ca42-4ca9-b855-4f66ab2e516c
 - !<ScriptComponent/853e15eb-fb92-440f-8b36-2fc11a059296>
   PrefabRemaps:
     []
@@ -654,6 +688,7 @@
       buttonScript: !<reference.ScriptComponent> b2a7ca2a-a85b-4682-a6b2-4665b3c8f7ca
       imageController: !<reference.ScriptComponent> f3bc3420-bf6c-40fc-9d2f-facd427f0a1a
       objController: !<reference.ScriptComponent> 94d794b7-cb4d-46af-9562-7f843ae4d39e
+      buttonImageController: !<reference.ScriptComponent> 5a47942c-d24b-42ba-a9f3-8a9dd2415ff2
   ScriptTypes:
     "":
       {}
@@ -685,7 +720,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 2.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 20.000000, y: 10.000000, z: 30.000000}
+    Scale: {x: 20.000000, y: 9.500000, z: 30.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -708,6 +743,25 @@
   Components:
     - !<own> 008805f0-5048-44bd-a742-71c6f0dd96e4
     - !<own> 94d794b7-cb4d-46af-9562-7f843ae4d39e
+- !<Image/a2c34e26-ca42-4ca9-b855-4f66ab2e516c>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 2
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 3e11932c-e2f0-441d-bf03-2201fb6b9a32
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/a66a46cb-b62a-410f-a63d-a958c06b2ec3>
   PrefabRemaps:
     []
@@ -739,9 +793,7 @@
   ScriptAsset: !<reference> af306e63-01b3-4e35-85a6-c621675f77fb
   ScriptInputsDefault:
     interactable: true
-    renderOrderOverride: true
     useColors: true
-    normalColor: true
     pressedColor: true
     disabledColor: true
     useTextures: true
@@ -792,10 +844,10 @@
   ScriptInputs:
     "":
       interactable: true
-      renderOrderOverride: 0
+      renderOrderOverride: 2
       text: ""
       useColors: true
-      normalColor: !<Vec4> {x: 0.999207, y: 0.988861, z: 0.016327, w: 1.000000}
+      normalColor: !<Vec4> {x: 1.000000, y: 0.968627, z: 0.980392, w: 1.000000}
       pressedColor: !<Vec4> {x: 0.664225, y: 0.664240, z: 0.664225, w: 1.000000}
       disabledColor: !<Vec4> {x: 0.500000, y: 0.500000, z: 0.500000, w: 0.500000}
       useTextures: false
@@ -924,7 +976,7 @@
   PrefabRemaps:
     []
   Name: Effects
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1028,13 +1080,14 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.150000, y: 0.030000, z: 0.100000}
+    Scale: {x: 0.180000, y: 0.050000, z: 0.100000}
     HasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> b2a7ca2a-a85b-4682-a6b2-4665b3c8f7ca
     - !<own> 98b3cfce-9846-4e6b-9175-e1783f63eebe
+    - !<own> 5a47942c-d24b-42ba-a9f3-8a9dd2415ff2
 - !<Camera/eab075e2-2936-42e7-921d-e5a2f4e6d455>
   PrefabRemaps:
     []
@@ -1094,9 +1147,9 @@
   ScriptInputs:
     "":
       image: !<reference.Image> b37c4731-3726-471a-9c64-66f7e40c587a
-      texture0: !<reference.Texture> 74b7e3c6-5c7e-4aec-aff4-9d7a4ce3d4ff
-      texture1: !<reference.Texture> 79e97ffa-f3e6-4c26-93cc-4158f490b307
-      texture2: !<reference.Texture> 0140dcb2-e88a-4598-be33-a5240211c8ae
+      texture0: !<reference.Texture> 995c1031-64d6-4793-8007-43b8dda54e71
+      texture1: !<reference.Texture> d85147eb-103c-4489-8079-658dd0f25c33
+      texture2: !<reference.Texture> 346458b3-ae94-499d-88ed-57200759de7f
   ScriptTypes:
     "":
       {}
@@ -1124,7 +1177,7 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -1.000000
+    left: -1.300000
     bottom: -0.750000
     right: 0.000000
     top: 2.000000
@@ -1193,7 +1246,7 @@
     - cf4efd11-5328-4127-b367-f8f9aa73b77e: 9693df05-cf9b-4970-6560-0fc01ce5e8f2
     - fb379a4e-08bf-4be3-a011-6650132abc59: a599b41c-beda-495b-7ffe-63087d39e63e
   Name: Old Marker
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
