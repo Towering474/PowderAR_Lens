@@ -475,9 +475,9 @@
   ScriptInputs:
     "":
       image: !<reference.Image> a2c34e26-ca42-4ca9-b855-4f66ab2e516c
-      texture0: !<reference.Texture> 995c1031-64d6-4793-8007-43b8dda54e71
-      texture1: !<reference.Texture> d85147eb-103c-4489-8079-658dd0f25c33
-      texture2: !<reference.Texture> 346458b3-ae94-499d-88ed-57200759de7f
+      texture0: !<reference.Texture> a6b5c7ed-f668-4e1c-8f07-8052f8ec2d47
+      texture1: !<reference.Texture> 397b10ab-f9e2-471a-9d52-2de181d8bdcc
+      texture2: !<reference.Texture> 91a034ff-68bf-43cd-b4b1-4ecf93e19b7e
   ScriptTypes:
     "":
       {}
@@ -1147,9 +1147,9 @@
   ScriptInputs:
     "":
       image: !<reference.Image> b37c4731-3726-471a-9c64-66f7e40c587a
-      texture0: !<reference.Texture> 995c1031-64d6-4793-8007-43b8dda54e71
-      texture1: !<reference.Texture> d85147eb-103c-4489-8079-658dd0f25c33
-      texture2: !<reference.Texture> 346458b3-ae94-499d-88ed-57200759de7f
+      texture0: !<reference.Texture> a6b5c7ed-f668-4e1c-8f07-8052f8ec2d47
+      texture1: !<reference.Texture> 397b10ab-f9e2-471a-9d52-2de181d8bdcc
+      texture2: !<reference.Texture> 91a034ff-68bf-43cd-b4b1-4ecf93e19b7e
   ScriptTypes:
     "":
       {}

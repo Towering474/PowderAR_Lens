@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 69
+    size: 68
     values:
       - 2Dchangecontroller.js
       - 3Dchangecontroller.js
@@ -57,7 +57,6 @@ CollapsedEntities:
       - onButtonChange.js
       - onOslilderchange.js
       - onZsliderchange.js
-      - pattern_crossgrid.png
       - pattern_extras.png
       - pattern_waves.png
       - pbr.ss_graph
