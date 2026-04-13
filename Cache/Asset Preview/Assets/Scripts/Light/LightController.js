@@ -30,7 +30,7 @@
 let envLighSource = null;
 let environmentIconImage = null;
 let chevronIconImage = null;
-let echoparkIdx = 0;
+const echoparkIdx = 0;
 const iconBackgroundImages = [];
 
 init();
@@ -50,8 +50,8 @@ function init() {
 }
 
 function onIconTapped(idx) {
-    iconBackgroundImages[idx].mainPass.Active = !iconBackgroundImages[idx].mainPass.Active
-    script.light[idx].sceneObject.enabled = iconBackgroundImages[idx].mainPass.Active
+    iconBackgroundImages[idx].mainPass.Active = !iconBackgroundImages[idx].mainPass.Active;
+    script.light[idx].sceneObject.enabled = iconBackgroundImages[idx].mainPass.Active;
 }
 
 function reset() {
@@ -72,7 +72,7 @@ function onEnvironmentIconTapped(idx) {
     const color = script.environmentIconBackgrounds[idx].mainPass.baseColor;
     if (color.w > 0) {
         color.w = 0;
-        
+
     } else {
         color.w = 1;
 

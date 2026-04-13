@@ -33,8 +33,8 @@ function update() {
         return;
     }
 
-    var screenScale = global.deviceInfoSystem.screenScale;    
-    
+    const screenScale = global.deviceInfoSystem.screenScale;
+
     scale.x = width / textureSize;
     scale.y = height / textureSize;
 
@@ -54,7 +54,7 @@ function onGridButtonTapped() {
     }
 }
 
-function show(){
+function show() {
     gridButtonImage.mainPass.Active = true;
     script.gridObject.enabled = true;
     script.gridButtonObj.enabled = true;

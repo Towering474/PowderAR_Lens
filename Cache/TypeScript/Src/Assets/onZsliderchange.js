@@ -1,6 +1,15 @@
 //@input Component.ScriptComponent sliderScript  // drag the Slider script here in Inspector
 //@input Component.ScriptComponent imageController
 
+script.updateValue = function(zValue) {
+    if (!script.sliderScript) {
+        print("⚠️ Slider script not assigned!");
+        return;
+    }
+    print("working");
+    script.sliderScript._setSliderValue(zValue);
+};
+
 function onSliderValueChanged(value) {
     print("Slider value changed:" + value);
     

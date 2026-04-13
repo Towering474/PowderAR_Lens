@@ -5,6 +5,9 @@
     - !<FileTexture/5784cd97-4e1a-43ab-9e9c-575e0b7caa7e>
       PackagePath: ""
       FileInfo: !<FileTextureInfo>
+        Extension: ""
+        Size:
+          bytes: 0
         Width: 2
         Height: 1
   SourceHash: 73e40afc9d1ee0d7a37c99b354d2d007

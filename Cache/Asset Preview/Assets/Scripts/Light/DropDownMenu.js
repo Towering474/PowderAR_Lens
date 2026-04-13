@@ -30,8 +30,7 @@ function init() {
 function setEnabled(curStatus) {
     if (curStatus) {
         enabledCnt++;
-    }
-    else {
+    } else {
         enabledCnt--;
     }
     isEnabled = enabledCnt > 0;

@@ -140,7 +140,7 @@
           wrapModeV: ClampToEdge
           wrapModeW: Repeat
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-          mipmaps: true
+          mipmaps: false
         type: Texture2D
     uv2Offset:
       typeIdx: 3

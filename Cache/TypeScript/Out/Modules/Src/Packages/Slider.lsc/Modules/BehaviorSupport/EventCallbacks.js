@@ -27,13 +27,12 @@ class EventCallbacks {
     }
     static invokeCallbackFromBehavior(behaviors, eventName) {
         return () => {
-            var _a;
             if (!behaviors) {
                 print("Warning: No event with name: " + eventName);
                 return;
             }
             for (const behavior of behaviors) {
-                (_a = behavior === null || behavior === void 0 ? void 0 : behavior.trigger) === null || _a === void 0 ? void 0 : _a.call(behavior);
+                behavior?.trigger?.();
             }
         };
     }

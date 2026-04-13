@@ -5,6 +5,30 @@ declare interface SceneObject extends SerializableWithUID {
     getComponent<Result extends Component>(componentType: Result extends BaseScriptComponent ? TypeName<Result> : never): Result | null;
     getComponents<Result extends Component>(componentType: Result extends BaseScriptComponent ? TypeName<Result> : never): Result[];
     createComponent<Result extends Component>(componentType: Result extends BaseScriptComponent ? TypeName<Result> : never): Result;
+    getComponentInAncestors<Result extends Component>(
+        componentType: Result extends BaseScriptComponent ? TypeName<Result> : never,
+        onlyEnabled?: boolean,
+        includeSelf?: boolean,
+        maxDepth?: number
+    ): Result | null;
+    getComponentsInAncestors<Result extends Component>(
+        componentType: Result extends BaseScriptComponent ? TypeName<Result> : never,
+        onlyEnabled?: boolean,
+        includeSelf?: boolean,
+        maxDepth?: number
+    ): Result[];
+    getComponentInDescendants<Result extends Component>(
+        componentType: Result extends BaseScriptComponent ? TypeName<Result> : never,
+        onlyEnabled?: boolean,
+        includeSelf?: boolean,
+        maxDepth?: number
+    ): Result | null;
+    getComponentsInDescendants<Result extends Component>(
+        componentType: Result extends BaseScriptComponent ? TypeName<Result> : never,
+        onlyEnabled?: boolean,
+        includeSelf?: boolean,
+        maxDepth?: number
+    ): Result[];
 }
 declare abstract class BaseScriptComponent implements ScriptComponent {
     api: Record<string, any>;

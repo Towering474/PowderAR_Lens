@@ -30,6 +30,7 @@
     fovController: false
     geometryBackgrounds: false
     geometryCheckObjects: false
+    iconGeometry: false
     iconTextures: false
     lightController: false
     meshes: false
@@ -55,6 +56,7 @@
       lightController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       fovController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       rightSection: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      iconGeometry: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

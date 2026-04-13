@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 71
+    size: 91
     values:
       - 2Dchangecontroller.js
       - 3Dchangecontroller.js
@@ -9,15 +9,23 @@ CollapsedEntities:
       - Box.mesh
       - Capsule.mesh
       - Color Correction.mat
+      - Device Camera Texture.deviceCameraTexture
+      - Echopark.hdr
+      - Echopark.hdr/Diffuse
+      - Echopark.hdr/Specular
       - Empty.png
       - Image 2.mat
       - Image 3.mat
+      - Image 4.mat
+      - Image 5.mat
+      - Image 6.mat
+      - Image 7.mat
       - Image 9.mat
       - "Image Marker [EDIT_ME] 2.imgmarker"
       - "Image Marker [EDIT_ME].imgmarker"
       - Image.mat
+      - Image.png
       - ImageMaterial.mat
-      - MYSLIDER.ts
       - Marker Cube.lspkg
       - Marker Cube.lspkg/Marker_Cube_PUT_UNDER_MAIN_CAM__PLACE_IN_SCENE.prefab
       - Marker Cube.lspkg/Materials
@@ -43,16 +51,19 @@ CollapsedEntities:
       - MarkerA3.png
       - MaterialParams.png
       - Normal.png
+      - OldButtonImage.mat
       - PBR 2.mat
       - PBR.mat
+      - Render Target.renderTarget
+      - Scene.scene
       - ScreenTexture.screenTexture
-      - Slider.lsc
       - Snapcode Marker.scmarker
       - T0B.mat
       - T1B.mat
       - T2B.mat
       - UI Button.lsc
       - color_correction.ss_graph
+      - flat.ss_graph
       - frame 2.png
       - frame.png
       - gud shit1.png
@@ -60,15 +71,24 @@ CollapsedEntities:
       - onButtonChange.js
       - onOslilderchange.js
       - onZsliderchange.js
+      - pattern_crossgrid2.png
+      - pattern_crossgrid3.png
       - pattern_extras.png
+      - pattern_extras2.png
       - pattern_waves.png
+      - pattern_waves2.png
       - pbr.ss_graph
       - rotated-image-complex.png
+      - rotated-image-spiral.png
       - rotated-image-wavy.png
       - rotated-image.png
+      - scene
+      - scene/.hidden
       - scene/.hidden/color_16089887.ss_graph
+      - scene/Materials
       - scene/Materials/color_16089887.mat
       - scene/Materials/color_16754264.mat
+      - scene/Meshes
       - scene/Meshes/Object_0.mesh
       - scene/Meshes/Object_1.mesh
       - scene/Meshes/Object_2.mesh

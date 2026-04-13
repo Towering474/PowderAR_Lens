@@ -5,7 +5,7 @@
 const previewZoneAnchors = script.previewZone.anchors;
 const camera = script.camera;
 let lastSize = camera.size;
-const toolbarSize = 25;
+const toolbarSize = 29;
 
 init();
 

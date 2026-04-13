@@ -2,6 +2,8 @@
 //@input Component.ScriptComponent imageController
 //@input Component.ScriptComponent objController
 //@input Component.ScriptComponent buttonImageController
+//@input Component.ScriptComponent zSliderController
+//@input Component.ScriptComponent oSliderController
 //@input int textureSelection = 0
 //@input boolean oldButton = false
 
@@ -35,6 +37,9 @@ function onbuttonValueChanged() {
     else {
        if (script.imageController && script.imageController.updateTexture) {
             script.imageController.updateTexture(script.textureSelection);
+            script.imageController.updateImage(0.7, 0.02);
+            script.oSliderController.updateValue(0.35);
+            script.zSliderController.updateValue(-0.96);
         } 
     }
     /*

@@ -150,11 +150,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: de85297c-3b3f-4084-b908-92a1b795db9e/67c8d7777176076fcff9c3afbd327c70/Data/42ea035/pbr.glsl
+      ShaderPath: de85297c-3b3f-4084-b908-92a1b795db9e/67c8d7777176076fcff9c3afbd327c70/Data/b2fd942/pbr.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: 67c8d7777176076fcff9c3afbd327c70
   FileHash: 8a50b91a56b9f40273a6717857e39756
   NativePackageItems:

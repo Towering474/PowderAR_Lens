@@ -46,7 +46,7 @@ function init() {
 
 function createIconObjs() {
     script.iconBackgroundObjects.forEach(function(obj) {
-        let newImage = obj.createComponent('Component.Image');
+        const newImage = obj.createComponent('Component.Image');
         newImage.stretchMode = StretchMode.Fill;
         iconImages.push(newImage);
     });

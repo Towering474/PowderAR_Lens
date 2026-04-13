@@ -3,7 +3,7 @@
     "allowJs": true,
     "isolatedModules": true,
     "lib": [
-      "es2019"
+      "es2021"
     ],
     "module": "commonjs",
     "noEmit": true,
@@ -15,7 +15,7 @@
       ]
     },
     "skipDefaultLibCheck": true,
-    "target": "es2019",
+    "target": "es2021",
     "types": []
   },
   "exclude": [

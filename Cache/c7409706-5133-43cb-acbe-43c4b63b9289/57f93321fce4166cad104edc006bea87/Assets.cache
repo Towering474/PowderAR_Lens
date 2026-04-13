@@ -5,6 +5,9 @@
     - !<FileTexture/626bfcc0-4e20-4a58-943d-5a78717ae848>
       PackagePath: ""
       FileInfo: !<FileTextureInfo>
+        Extension: png
+        Size:
+          bytes: 1510
         Width: 18
         Height: 900
   SourceHash: 57f93321fce4166cad104edc006bea87

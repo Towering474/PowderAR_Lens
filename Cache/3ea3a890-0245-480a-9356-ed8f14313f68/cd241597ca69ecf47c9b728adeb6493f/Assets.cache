@@ -192,12 +192,15 @@
             mDefaultVal: 0.500000
             mValues:
               []
-        ShaderType: PostProcessing
-      ShaderPath: 3ea3a890-0245-480a-9356-ed8f14313f68/cd241597ca69ecf47c9b728adeb6493f/Data/42ea035/color_correction.glsl
+        ShaderType: PostEffect
+      ShaderPath: 3ea3a890-0245-480a-9356-ed8f14313f68/cd241597ca69ecf47c9b728adeb6493f/Data/b2fd942/color_correction.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: cd241597ca69ecf47c9b728adeb6493f
   FileHash: 50f73588d29530cbbb44b9f20ff6e5e6
   NativePackageItems:

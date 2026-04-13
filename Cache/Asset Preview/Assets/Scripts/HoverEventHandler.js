@@ -15,7 +15,7 @@ let mainPass;
 init();
 
 function init() {
-    mainPass = script.getSceneObject().getComponent("Component.Image").mainPass;
+    mainPass = script.getSceneObject().getComponent('Component.Image').mainPass;
 }
 
 const delayedEvent = script.createEvent('DelayedCallbackEvent');
@@ -29,7 +29,7 @@ interactionComp.onHoverStart.add(function() {
             setUpHint();
         }
     }
-    
+
     mainPass.Hover = true;
 
     if (script.showHint && hintObject) {
@@ -47,12 +47,12 @@ interactionComp.onHoverEnd.add(function() {
     }
 });
 
-script.createEvent("OnDisableEvent").bind(function(){
+script.createEvent('OnDisableEvent').bind(function() {
     mainPass.Hover = false;
     if (hintObject) {
         hintObject.enabled = false;
     }
-})
+});
 
 function checkHoverStatus() {
     if (hoverIdx != global.hoverIdx) {

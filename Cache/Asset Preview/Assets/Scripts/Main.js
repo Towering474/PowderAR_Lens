@@ -5,6 +5,8 @@
 //@input Component.ScriptComponent otherObjectsPreviewController
 //@input Component.ScriptComponent gridController
 //@input Component.ScriptComponent placementScript
+//@input Component.ScriptComponent segmentationTexturePreviewController
+//@input Component.ScriptComponent handSegmentationTexturePreviewController
 
 const updateEvent = script.createEvent('LateUpdateEvent');
 updateEvent.bind(update);
@@ -38,7 +40,13 @@ function update() {
             if (mainPass) {
                 hide();
                 const texture = mainPass.baseTex;
-                script.texturePreviewController.show(texture);
+                if (texture.control.getTypeName() === 'Provider.SegmentationTextureProvider') {
+                    script.segmentationTexturePreviewController.show(texture);
+                } else if (texture.control.getTypeName() === 'Provider.ObjectTrackingTextureProvider') {
+                    script.handSegmentationTexturePreviewController.show(texture);
+                } else {
+                    script.texturePreviewController.show(texture);
+                }
                 newObject.destroy();
             }
 
@@ -46,7 +54,7 @@ function update() {
         }
     }
 
-    var renderMeshVisual = newObject.getComponent('Component.RenderMeshVisual');
+    const renderMeshVisual = newObject.getComponent('Component.RenderMeshVisual');
 
     if (!hasChild && renderMeshVisual && (newObject.name.includes('Mesh using') || newObject.name.includes('Post Effect:'))) {
         if (renderMeshVisual) {
@@ -58,7 +66,6 @@ function update() {
     }
 
     if (!hasChild && renderMeshVisual) {
-        var renderMeshVisual = newObject.getComponent('Component.RenderMeshVisual');
         if (renderMeshVisual) {
             hide();
             script.placementScript.reparentNew();
@@ -91,4 +98,6 @@ function hide() {
     script.meshPreviewController.hide();
     script.vfxPreviewController.hide();
     script.otherObjectsPreviewController.hide();
+    script.segmentationTexturePreviewController.hide();
+    script.handSegmentationTexturePreviewController.hide();
 }

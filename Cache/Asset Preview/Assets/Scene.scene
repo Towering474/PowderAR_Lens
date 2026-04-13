@@ -4,87 +4,63 @@
     - !<own> 2d35ced7-2f3a-4d01-9d68-f06988455639
   layers: !<Layers/382ccb3f-9ae0-4c47-a842-4f9f47ce4353>
     userLayers:
-      - |-
-        id: 1
+      - id: 1
         name: Layer 1
         color: 0
-      - |-
-        id: 2
+      - id: 2
         name: Layer 2
         color: 1
-      - |-
-        id: 3
+      - id: 3
         name: Layer 3
         color: 2
-      - |-
-        id: 4
+      - id: 4
         name: Layer 4
         color: 3
-      - |-
-        id: 5
+      - id: 5
         name: Layer 5
         color: 4
-      - |-
-        id: 6
+      - id: 6
         name: Layer 6
         color: 5
-      - |-
-        id: 7
+      - id: 7
         name: Layer 7
         color: 6
-      - |-
-        id: 8
+      - id: 8
         name: Layer 8
         color: 7
-      - |-
-        id: 9
+      - id: 9
         name: Layer 9
         color: 8
-      - |-
-        id: 10
+      - id: 10
         name: Layer 10
         color: 9
-      - |-
-        id: 11
+      - id: 11
         name: Layer 11
         color: 10
-      - |-
-        id: 12
+      - id: 12
         name: Layer 12
         color: 11
-      - |-
-        id: 13
+      - id: 13
         name: Layer 13
         color: 12
-      - |-
-        id: 14
+      - id: 14
         name: Layer 14
         color: 13
-      - |-
-        id: 15
+      - id: 15
         name: Layer 15
         color: 14
-      - |-
-        id: 16
+      - id: 16
         name: Layer 16
         color: 15
-      - |-
-        id: 17
+      - id: 17
         name: Layer 17
         color: 16
-      - |-
-        id: 18
-        name: Layer 18
-        color: 17
-      - |-
-        id: 19
-        name: Layer 19
-        color: 18
-    HasOrtho: true
   RenderOutput: !<reference> 1be971d7-ae94-4a3d-8151-df9ec4be6ff5
   RenderPreviewOutput: !<reference> 1be971d7-ae94-4a3d-8151-df9ec4be6ff5
   RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
   PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  PrefabPreviewEnvironmentInitialized: false
+  PrefabPreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
 - !<InteractionComponent/00b768fd-d8e6-4b78-9b24-0da9779fca75>
   PrefabRemaps:
     []
@@ -143,6 +119,26 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/023d8f9e-b19c-4cdc-b4ba-44a1a1220388>
+  PrefabRemaps:
+    []
+  Name: HandSegmentationTexturePreviewController
+  Enabled: true
+  ScriptAsset: !<reference> afd1d661-7ee1-4180-bded-1a0a753a829a
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      fovController: !<reference.ScriptComponent> b3f5add2-540e-4d2c-84fe-86bb579389c7
+      mappingObj: !<reference.SceneObject> 6b01cf3b-f6d4-4dbe-a1ef-a867303b2dc6
+      texturePreviewMat: !<reference.Material> c17772e5-7a68-4619-a346-a302d733d3f2
+      handSegmentationTexture: !<reference.Texture> 05b648b1-9cf9-4c43-bc37-3c859eca8efb
+      nailsSegmentationTexture: !<reference.Texture> 513aac74-4394-41f8-8780-7caa9fe2a14a
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/0278c531-9d31-4d87-9470-30017e68332b>
   PrefabRemaps:
     []
@@ -384,6 +380,8 @@
       otherObjectsPreviewController: !<reference.ScriptComponent> e98e84e6-d620-4c55-864b-a8d8b8e16530
       gridController: !<reference.ScriptComponent> 576027ef-0f06-4128-8da7-476e3a4d39a5
       placementScript: !<reference.ScriptComponent> 6fd363f1-6926-4a83-9710-a64561792a77
+      segmentationTexturePreviewController: !<reference.ScriptComponent> 9b6c9bae-6112-47ad-a453-ef121abbdb8b
+      handSegmentationTexturePreviewController: !<reference.ScriptComponent> 023d8f9e-b19c-4cdc-b4ba-44a1a1220388
   ScriptTypes:
     "":
       {}
@@ -556,6 +554,21 @@
   DepthFilter: false
   MeshVisuals:
     []
+- !<SceneObject/140a68e4-5342-45d9-b790-119421874081>
+  PrefabRemaps:
+    []
+  Name: SegmentationTexturePreviewController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9b6c9bae-6112-47ad-a453-ef121abbdb8b
 - !<Image/14bb56bf-97b2-433b-b64e-dfb12d295996>
   PrefabRemaps:
     []
@@ -668,7 +681,6 @@
   renderLayer: 1
   LightType: Ambient
   Intensity: 0.700000
-  CastShadows: false
   ShadowDensity: 0.300000
   ShadowBlurRadius: 0.000000
   ShadowTextureSize: 512
@@ -690,9 +702,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 1.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<InteractionComponent/1af3b079-435d-468d-a274-e62f29c69f13>
   PrefabRemaps:
     []
@@ -857,7 +869,6 @@
   renderLayer: 1
   LightType: EnvMap
   Intensity: 1.000000
-  CastShadows: false
   ShadowDensity: 1.000000
   ShadowBlurRadius: 0.000000
   ShadowTextureSize: 512
@@ -879,9 +890,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<ScriptComponent/2218f4bc-0bb2-4e32-8bb8-c054ff556578>
   PrefabRemaps:
     []
@@ -898,9 +909,9 @@
       dropDownMenu: !<reference.ScriptComponent> 4d930249-533a-4a48-a3f9-1cf0ba9894a1
       firstObj: !<reference.SceneObject> b05f353b-5dde-45de-b7e0-822e04265b20
       icons: !<reference.Texture[]>
-        - !<reference> 770724f8-64f0-44f6-adf3-e15251b5fc60
-        - !<reference> 46df821c-a05a-42b2-b776-c27fe6cd3138
         - !<reference> 28f3f301-aa35-42a0-aeb0-892445ebe5a8
+        - !<reference> 46df821c-a05a-42b2-b776-c27fe6cd3138
+        - !<reference> 770724f8-64f0-44f6-adf3-e15251b5fc60
   ScriptTypes:
     "":
       {}
@@ -1030,6 +1041,8 @@
     - !<own> 234cd56a-d07c-4fc0-a424-f0a6b0a65d8a
     - !<own> e14c9813-9fa6-440f-919c-03b0b8e5a00e
     - !<own> bf6d0380-bcc6-43bd-a85b-0a6ca4c37728
+    - !<own> 140a68e4-5342-45d9-b790-119421874081
+    - !<own> 68101b40-ad1d-4b26-b4f8-2ac626c0cdec
     - !<own> a2459cbb-5bf7-4676-ad74-c39805fc4fcb
     - !<own> 72400b43-64c9-43d1-b418-7ad72438b23f
     - !<own> ffbbf060-349d-4e24-8d32-79c662a2d928
@@ -1376,8 +1389,9 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 800
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  FontSize: 800.000000
+  FontWeight: 400
+  Italic: false
   LayoutRect:
     left: -7.500000
     bottom: -2.250000
@@ -1440,6 +1454,7 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+  FontSource: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/35668246-ad69-4b1e-87bb-7abf852fea84>
   PrefabRemaps:
     []
@@ -1763,7 +1778,6 @@
   renderLayer: 1
   LightType: Directional
   Intensity: 1.800000
-  CastShadows: false
   ShadowDensity: 0.300000
   ShadowBlurRadius: 0.000000
   ShadowTextureSize: 512
@@ -1785,9 +1799,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 1.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<ScriptComponent/405c1bc1-7201-44ce-83e4-c0e984a29d3e>
   PrefabRemaps:
     []
@@ -2801,6 +2815,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/68101b40-ad1d-4b26-b4f8-2ac626c0cdec>
+  PrefabRemaps:
+    []
+  Name: HandSegmentationTexturePreviewController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 023d8f9e-b19c-4cdc-b4ba-44a1a1220388
 - !<ScreenTransform/6a59b9f0-ee7e-4e66-9921-55dd35265f73>
   PrefabRemaps:
     []
@@ -3930,9 +3959,9 @@
         - !<reference> e6087295-d13c-457e-8bb4-477e9d6701d1
         - !<reference> ffc35819-1c88-4233-b6fa-84fe35185f72
       iconTextures: !<reference.Texture[]>
-        - !<reference> 770724f8-64f0-44f6-adf3-e15251b5fc60
         - !<reference> 28f3f301-aa35-42a0-aeb0-892445ebe5a8
         - !<reference> 46df821c-a05a-42b2-b776-c27fe6cd3138
+        - !<reference> 770724f8-64f0-44f6-adf3-e15251b5fc60
       geometryBackgrounds: !<reference.Image[]>
         - !<reference> ff7d285e-ec7e-47a3-8cdc-19f2807554b4
       geometryCheckObjects: !<reference.SceneObject[]>
@@ -3940,6 +3969,49 @@
       lightController: !<reference.ScriptComponent> b70095ce-a72a-4dcc-a49e-e1c7680e0954
       fovController: !<reference.ScriptComponent> b3f5add2-540e-4d2c-84fe-86bb579389c7
       rightSection: !<reference.SceneObject> b5c5bad4-1af4-47ed-80e1-40e332923db0
+      iconGeometry: !<reference.SceneObject> 83fb95fb-7400-4918-9ad3-b99201d45e33
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/9b6c9bae-6112-47ad-a453-ef121abbdb8b>
+  PrefabRemaps:
+    []
+  Name: SegmentationTexturePreviewController
+  Enabled: true
+  ScriptAsset: !<reference> 77f8d003-c88d-42d0-b9c9-6c8eadb327b9
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      fovController: !<reference.ScriptComponent> b3f5add2-540e-4d2c-84fe-86bb579389c7
+      mappingObj: !<reference.SceneObject> 6b01cf3b-f6d4-4dbe-a1ef-a867303b2dc6
+      texturePreviewMat: !<reference.Material> c17772e5-7a68-4619-a346-a302d733d3f2
+      backgroundTexture: !<reference.Texture> 10da9101-f808-457f-9df8-d066a9416529
+      invBackgroundTexture: !<reference.Texture> 261809a4-075e-4b42-bd57-4c52901290c1
+      hairTexture: !<reference.Texture> 217c6766-bd8e-4d6b-bada-0e819dc36351
+      invHairTexture: !<reference.Texture> 29094268-2be0-4df3-8445-b644dabbfc0b
+      skinTexture: !<reference.Texture> d26130f3-a247-424b-b044-08cb3cf9cc6b
+      invSkinTexture: !<reference.Texture> 9ee50e52-cb40-4e78-8c33-aee8f0d36c54
+      shoulderTexture: !<reference.Texture> ae565fad-19af-49b8-9416-76ccdc8e5cb0
+      invShoulderTexture: !<reference.Texture> ff823c2b-a8db-44cf-bcc2-e6d3121a6394
+      faceTexture: !<reference.Texture> 8ea1af7d-9d3d-44d6-9eff-545fa2891ea8
+      invFaceTexture: !<reference.Texture> 97f158f7-a658-4b16-af95-a2a73f4f1f3a
+      headTexture: !<reference.Texture> fa2779ff-e437-44d6-8b81-c241e64663f7
+      invHeadTexture: !<reference.Texture> 6ee37fc6-cde2-4fd8-b7b0-44503ab47c82
+      skyTexture: !<reference.Texture> c97358ce-717f-4211-a228-4ae54708b26a
+      invSkyTexture: !<reference.Texture> 83e8aeb8-2acb-4cbf-87de-8e7365b98772
+      bodyTexture: !<reference.Texture> dfd12812-11b5-42df-b574-97ae4e5ea5ee
+      invBodyTexture: !<reference.Texture> 48563767-46dd-4a2e-91b6-ae7548bd3557
+      upperGarmentTexture: !<reference.Texture> 52b8b860-f17c-4435-9d37-c9dbb067c0f9
+      invUpperGarmentTexture: !<reference.Texture> 996261a7-16f6-4233-8f6f-dee1c91cf163
+      lowerGarmentTexture: !<reference.Texture> c7fb4aa5-a955-4301-9be1-b90219f4083a
+      invLowerGarmentTexture: !<reference.Texture> 1a11d593-99a2-4b15-9290-b41ccbd446e6
+      fullGarmentTexture: !<reference.Texture> 57beb225-5f22-4c2b-bab1-7e8f9bde47c0
+      invFullGarmentTexture: !<reference.Texture> 3a8a50e9-b614-418f-b628-b57a132885d9
+      footwearTexture: !<reference.Texture> dad4704f-c4e7-49c9-96d1-6c7efb39ba13
+      invFootwearTexture: !<reference.Texture> 55d0b55c-23d6-4f7f-86e4-763a20e39a0b
   ScriptTypes:
     "":
       {}
@@ -4923,7 +4995,6 @@
   renderLayer: 1
   LightType: Point
   Intensity: 1.000000
-  CastShadows: false
   ShadowDensity: 0.300000
   ShadowBlurRadius: 0.000000
   ShadowTextureSize: 512
@@ -4945,9 +5016,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 1.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<ScreenTransform/d11a2586-91c0-49d9-9783-0cd29cb7d64c>
   PrefabRemaps:
     []
@@ -5426,8 +5497,9 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 800
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  FontSize: 800.000000
+  FontWeight: 400
+  Italic: false
   LayoutRect:
     left: -7.500000
     bottom: -2.250000
@@ -5490,6 +5562,7 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+  FontSource: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/e98e84e6-d620-4c55-864b-a8d8b8e16530>
   PrefabRemaps:
     []
@@ -5524,8 +5597,9 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 800
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  FontSize: 800.000000
+  FontWeight: 400
+  Italic: false
   LayoutRect:
     left: -7.500000
     bottom: -2.250000
@@ -5588,6 +5662,7 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+  FontSource: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/ea71cb5d-30ff-47dc-8195-b5ec857f2829>
   PrefabRemaps:
     []
@@ -5866,7 +5941,6 @@
   renderLayer: 1
   LightType: Directional
   Intensity: 1.000000
-  CastShadows: true
   ShadowDensity: 0.440000
   ShadowBlurRadius: 4.000000
   ShadowTextureSize: 512
@@ -5888,9 +5962,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: Projective
 - !<ScreenTransform/ff278d9b-be97-4066-8fb0-5c478aff0d78>
   PrefabRemaps:
     []

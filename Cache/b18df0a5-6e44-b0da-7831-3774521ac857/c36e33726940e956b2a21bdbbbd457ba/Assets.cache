@@ -68,11 +68,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: b18df0a5-6e44-b0da-7831-3774521ac857/c36e33726940e956b2a21bdbbbd457ba/Data/42ea035/Occluder.glsl
+      ShaderPath: b18df0a5-6e44-b0da-7831-3774521ac857/c36e33726940e956b2a21bdbbbd457ba/Data/b2fd942/Occluder.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: c36e33726940e956b2a21bdbbbd457ba
   FileHash: 13a1797f8d8754b6f6c3ab80bdb6e6f8
   NativePackageItems:

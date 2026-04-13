@@ -1433,11 +1433,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 91b40ca3-1741-988d-604e-b0d08735002b/59380bd949391a6438f6f3fea437ed1d/Data/42ea035/Uber PBR1.glsl
+      ShaderPath: 91b40ca3-1741-988d-604e-b0d08735002b/59380bd949391a6438f6f3fea437ed1d/Data/b2fd942/Uber PBR1.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: 59380bd949391a6438f6f3fea437ed1d
   FileHash: 7620be80088a8086559a80e59ae1b398
   NativePackageItems:

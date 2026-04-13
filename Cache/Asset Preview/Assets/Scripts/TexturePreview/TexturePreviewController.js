@@ -7,11 +7,11 @@
 //@input Asset.Material[] texturePreviewMats
 
 // channel value is changed to float because there's no int uniform in graph, all int will be cast to float.
-let channelIdx = 0;
+const channelIdx = 0;
 let mappingObjIdx = 0;
 const channelBackgroundPass = [];
 const mappingBackgroundPass = [];
-const channelNames = ["red_channel", "green_channel", "blue_channel", "alpha_channel", "envmap_preview"]
+const channelNames = ['red_channel', 'green_channel', 'blue_channel', 'alpha_channel', 'envmap_preview'];
 let buttonStates = [true, true, true, true, false];
 let texturePreviewPass;
 
@@ -50,13 +50,13 @@ function setChannelIdx(idx) {
 function setChannelStates() {
     channelNames.forEach(function(channelName, idx) {
         texturePreviewPass[mappingObjIdx][channelName] = buttonStates[idx];
-    })
+    });
 }
 
 function setButtonStates() {
     buttonStates.forEach(function(state, idx) {
         setChannelBackgroundColor(idx, state);
-    })
+    });
 }
 
 function setMappingIndex(idx) {
@@ -105,7 +105,7 @@ function hideMappingObjs() {
 }
 
 function hide() {
-    hideMappingObjs();
+    reset();
     script.textureLeftSection.enabled = false;
     script.textureMiddleSection.enabled = false;
     script.fovController.resume();

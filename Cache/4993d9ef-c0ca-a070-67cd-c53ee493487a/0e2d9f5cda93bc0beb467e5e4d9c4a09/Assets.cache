@@ -241,11 +241,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 4993d9ef-c0ca-a070-67cd-c53ee493487a/0e2d9f5cda93bc0beb467e5e4d9c4a09/Data/42ea035/Slider_mat.glsl
+      ShaderPath: 4993d9ef-c0ca-a070-67cd-c53ee493487a/0e2d9f5cda93bc0beb467e5e4d9c4a09/Data/b2fd942/Slider_mat.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: 0e2d9f5cda93bc0beb467e5e4d9c4a09
   FileHash: 75be3bf338ff9207c91f9c684f148fb9
   NativePackageItems:

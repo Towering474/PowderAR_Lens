@@ -6,16 +6,15 @@
     - !<own> 4b0db206-d8d4-420b-a62c-a7ce25461066
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
-      - |
-        id: 1
+      - id: 1
         name: UI
         color: 0
-
-    HasOrtho: true
   RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
   PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  PrefabPreviewEnvironmentInitialized: false
+  PrefabPreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/00000000-0000-0065-0000-000000000064>
   PrefabRemaps:
     []
@@ -100,10 +99,9 @@
     []
   Name: Light Source
   Enabled: true
-  renderLayer: 1835007
+  renderLayer: 1310719
   LightType: Directional
   Intensity: 1.000000
-  CastShadows: false
   ShadowDensity: 0.440000
   ShadowBlurRadius: 4.000000
   ShadowTextureSize: 512
@@ -125,9 +123,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<SceneObject/00056e79-b066-62ca-0000-000000001406>
   PrefabRemaps:
     []
@@ -148,10 +146,9 @@
     []
   Name: Light Source
   Enabled: true
-  renderLayer: 1835007
+  renderLayer: 1310719
   LightType: EnvMap
   Intensity: 1.000000
-  CastShadows: false
   ShadowDensity: 1.000000
   ShadowBlurRadius: 0.000000
   ShadowTextureSize: 512
@@ -173,9 +170,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<RenderMeshVisual/008805f0-5048-44bd-a742-71c6f0dd96e4>
   PrefabRemaps:
     []
@@ -326,7 +323,7 @@
   PrefabRemaps:
     []
   Name: Button Transform
-  Enabled: true
+  Enabled: false
   Layers: 2
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -362,7 +359,7 @@
   PrefabRemaps:
     []
   Name: onZsliderchange
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> db4de1ea-765d-41c6-8405-330693372024
   ScriptInputsDefault:
     {}
@@ -728,7 +725,7 @@
   Children:
     - !<own> b3636393-d3f5-4d83-98d1-9dd1d6601984
     - !<own> fd7f5736-4e72-4f91-bab3-a01b2fad2b75
-    - !<own> 9ac7f77a-4dde-4671-8b0a-74fe25520b15
+    - !<own> bb4f75b0-8a37-48c0-90f6-f387f6331939
     - !<own> 9eabdf47-d46e-4762-a6ad-da1904df4756
   Components:
     - !<own> 0673fcc9-217b-4200-833d-2d618a4a6e9a
@@ -1164,7 +1161,7 @@
   PrefabRemaps:
     []
   Name: onOslilderchange
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 37eacdd2-9d3c-40eb-a7f8-e5d6fd8b9337
   ScriptInputsDefault:
     {}
@@ -1270,6 +1267,8 @@
   Enabled: true
   ScriptAsset: !<reference> 5da06dfb-674f-4079-8452-200ec495d28a
   ScriptInputsDefault:
+    zSliderController: true
+    oSliderController: true
     textureSelection: true
   ScriptTypesDefault:
     {}
@@ -1279,6 +1278,8 @@
       imageController: !<reference.ScriptComponent> f3bc3420-bf6c-40fc-9d2f-facd427f0a1a
       objController: !<reference.ScriptComponent> 94d794b7-cb4d-46af-9562-7f843ae4d39e
       buttonImageController: !<reference.ScriptComponent> 5a47942c-d24b-42ba-a9f3-8a9dd2415ff2
+      zSliderController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      oSliderController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       textureSelection: 3
       oldButton: true
   ScriptTypes:
@@ -1310,9 +1311,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 2.000000}
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 20.000000, y: 11.000000, z: 30.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -1404,6 +1405,8 @@
       imageController: !<reference.ScriptComponent> f3bc3420-bf6c-40fc-9d2f-facd427f0a1a
       objController: !<reference.ScriptComponent> 94d794b7-cb4d-46af-9562-7f843ae4d39e
       buttonImageController: !<reference.ScriptComponent> 6ad7ae6b-dec3-4acc-b664-c2876c04a29c
+      zSliderController: !<reference.ScriptComponent> 8c6b126d-cfad-4df1-85f9-cd7bbc63679e
+      oSliderController: !<reference.ScriptComponent> 1385f41e-fad7-4b2f-be87-5c6184da0cf0
       textureSelection: 0
       oldButton: false
   ScriptTypes:
@@ -1467,6 +1470,8 @@
       imageController: !<reference.ScriptComponent> f3bc3420-bf6c-40fc-9d2f-facd427f0a1a
       objController: !<reference.ScriptComponent> 94d794b7-cb4d-46af-9562-7f843ae4d39e
       buttonImageController: !<reference.ScriptComponent> acb1d612-d44c-4ead-a47f-ab7dcc68de5c
+      zSliderController: !<reference.ScriptComponent> 8c6b126d-cfad-4df1-85f9-cd7bbc63679e
+      oSliderController: !<reference.ScriptComponent> 1385f41e-fad7-4b2f-be87-5c6184da0cf0
       textureSelection: 2
       oldButton: false
   ScriptTypes:
@@ -1691,6 +1696,21 @@
     HasSegmentScaleCompensation: false
   Children:
     []
+  Components:
+    []
+- !<SceneObject/bb4f75b0-8a37-48c0-90f6-f387f6331939>
+  PrefabRemaps:
+    []
+  Name: Scale
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 2.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 14.380000, y: 15.600000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9ac7f77a-4dde-4671-8b0a-74fe25520b15
   Components:
     []
 - !<ScriptComponent/c0442d58-e625-4cb5-895e-c6709be9bd13>
@@ -1952,6 +1972,8 @@
       imageController: !<reference.ScriptComponent> f3bc3420-bf6c-40fc-9d2f-facd427f0a1a
       objController: !<reference.ScriptComponent> 94d794b7-cb4d-46af-9562-7f843ae4d39e
       buttonImageController: !<reference.ScriptComponent> 16197e54-9a46-4de4-90ba-a3a4f9ec12d2
+      zSliderController: !<reference.ScriptComponent> 8c6b126d-cfad-4df1-85f9-cd7bbc63679e
+      oSliderController: !<reference.ScriptComponent> 1385f41e-fad7-4b2f-be87-5c6184da0cf0
       textureSelection: 1
       oldButton: false
   ScriptTypes:

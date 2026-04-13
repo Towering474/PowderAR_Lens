@@ -6,9 +6,11 @@
 //@input Component.ScriptComponent lightController
 //@input Component.ScriptComponent fovController
 //@input SceneObject rightSection
+//@input SceneObject iconGeometry
 
 let renderMeshVisual;
 let chevronIconImage = null;
+let iconGeometryPass;
 let curObjIdx;
 let previewObject;
 const ghostScale = 0.02;
@@ -17,6 +19,7 @@ init();
 
 function init() {
     chevronIconImage = script.chevronIconObj.getComponent('Component.Image');
+    iconGeometryPass = script.iconGeometry.getComponent('Component.Image').mainPass;
 }
 
 function show(newObject) {
@@ -58,6 +61,7 @@ function setGeometryIconHoverStatus(idx, status) {
 function update() {
     resetCheckObjects();
     script.geometryCheckObjects[curObjIdx].enabled = true;
+    iconGeometryPass.baseTex = script.iconTextures[curObjIdx];
     if (curObjIdx == 1) {
         previewObject.getTransform().setWorldScale(vec3.one().uniformScale(10 * ghostScale));
     } else {

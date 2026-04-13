@@ -1825,11 +1825,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: b5ba9d93-51a5-4c7e-8f9d-5a2b3b96ea07/e9e7772b0435ee52fbcb230c74efe8e6/Data/42ea035/color_16089887.glsl
+      ShaderPath: b5ba9d93-51a5-4c7e-8f9d-5a2b3b96ea07/e9e7772b0435ee52fbcb230c74efe8e6/Data/b2fd942/color_16089887.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: e9e7772b0435ee52fbcb230c74efe8e6
   FileHash: 3c270d837e3289cfa6eba968d32b4db4
   NativePackageItems:

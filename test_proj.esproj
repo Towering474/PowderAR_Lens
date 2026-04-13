@@ -1,27 +1,13 @@
 studioVersion:
   major: 5
-  minor: 14
+  minor: 20
   patch: 0
-  build: 25091606
+  build: 26040820
   type: Public
-coreVersion: 328
-clientVersion: 13.580000
-updateCheckpoint: 75
+coreVersion: 356
+clientVersion: 13.86
+updateCheckpoint: 96
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
-viewConfig:
-  simulation:
-    device: iPhone 14 Pro
-    cameraFov: 23.830000
-    fullFrameAspect: 0.562500
-    resolutionScale: 1.000000
-    viewport: Maximized
-    output: Live
-    stereoOutputEye: Center
-    deviceTypeOverride: Unknown
-    tint: true
-    screenshot: false
-    videoScreenRecord: false
-  cameraType: Back
 metaInfo:
   hints:
     []
@@ -30,6 +16,10 @@ metaInfo:
   lensName: Expressive Powder
   lensDescriptors:
     - GEN_AI_ICON
+  lensApplicableContext:
+    - live_camera
+    - reply_camera
+    - video_chat
   lensApplicability:
     - Front
     - Back
@@ -42,6 +32,7 @@ metaInfo:
   fromTemplateUrl: Lens Studio 5.14.0.25091606
   activationCamera: Front
   sourceMapEnabled: false
+  shaderCacheInvalidationEnabled: false
   usingMinClientVersions: false
   androidMinClientVersion:
     major: 0
@@ -55,3 +46,7 @@ metaInfo:
     build: 0
   documentId: f3d524c5-ac07-44a7-b03a-e07d591396ec
   originalDocumentId: f3d524c5-ac07-44a7-b03a-e07d591396ec
+  packageId: ""
+  packageVersion: ""
+  spkPrivilegeLevel: Generic
+  gluboEnabled: false

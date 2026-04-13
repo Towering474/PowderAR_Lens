@@ -431,11 +431,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 79d65b9b-0467-faf5-4466-4073c57b65b2/5e2b036a9024bf3ca0c71e42d9a05b5d/Data/42ea035/Graph Matte Shadow.glsl
+      ShaderPath: 79d65b9b-0467-faf5-4466-4073c57b65b2/5e2b036a9024bf3ca0c71e42d9a05b5d/Data/b2fd942/Graph Matte Shadow.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: 5e2b036a9024bf3ca0c71e42d9a05b5d
   FileHash: ba431a14d6a89b369937135b4c528cba
   NativePackageItems:

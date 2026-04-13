@@ -546,11 +546,14 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: c1058bcf-a5bd-4109-a4e7-353270f2a2d0/8b733ea7ec9489b46abdbf1edef0f38a/Data/42ea035/image_unlit.glsl
+      ShaderPath: c1058bcf-a5bd-4109-a4e7-353270f2a2d0/8b733ea7ec9489b46abdbf1edef0f38a/Data/b2fd942/image_unlit.xglsl
       Defines:
         []
       Properties:
         {}
+      ReferencedAssets:
+        []
+      GraphStatus: Evaluated
   SourceHash: 8b733ea7ec9489b46abdbf1edef0f38a
   FileHash: 12df430b0f445ed67693603a13ad1ee1
   NativePackageItems:

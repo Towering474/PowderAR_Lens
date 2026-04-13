@@ -27,10 +27,12 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     gridController: false
+    handSegmentationTexturePreviewController: false
     materialPreviewController: false
     meshPreviewController: false
     otherObjectsPreviewController: false
     placementScript: false
+    segmentationTexturePreviewController: false
     texturePreviewController: false
     vfxPreviewController: false
   ScriptTypesHidden:
@@ -49,6 +51,8 @@
       otherObjectsPreviewController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       gridController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       placementScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      segmentationTexturePreviewController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      handSegmentationTexturePreviewController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

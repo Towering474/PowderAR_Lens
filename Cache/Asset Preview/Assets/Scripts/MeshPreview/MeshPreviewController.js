@@ -30,7 +30,7 @@ function hide() {
 }
 
 function onMappingButtonTapped() {
-    mappingImage.mainPass.Active = !mappingImage.mainPass.Active
+    mappingImage.mainPass.Active = !mappingImage.mainPass.Active;
 
     if (mappingImage.mainPass.Active) {
         mainPass.baseTex = script.textureAnalyzer;
