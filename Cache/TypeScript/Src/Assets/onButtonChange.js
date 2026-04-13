@@ -2,6 +2,8 @@
 //@input Component.ScriptComponent imageController
 //@input Component.ScriptComponent objController
 //@input Component.ScriptComponent buttonImageController
+//@input int textureSelection = 0
+//@input boolean oldButton = false
 
 // Toggle state (tracks ON/OFF)
 var isToggled = false;
@@ -9,23 +11,31 @@ var textureId = 0;
 var tId = 0;
 
 function onbuttonValueChanged() {
-    print("button value changed:" + isToggled);
 
-    // WIP check button state and call script.imageController.updateVisibility(toggle)
-    isToggled = !isToggled;
-    textureId = textureId + 1;
-    tId = textureId % 3;
+    if (script.oldButton) {
+        print("button value changed:" + isToggled);
 
-    print("button value changed:" + textureId + tId);
+        // WIP check button state and call script.imageController.updateVisibility(toggle)
+        isToggled = !isToggled;
+        textureId = textureId + 1;
+        tId = textureId % 3;
 
-    // Rotate between textures
-    if (script.imageController && script.imageController.updateTexture) {
-        script.imageController.updateTexture(tId);
+        print("button value changed:" + textureId + tId);
+
+        // Rotate between textures
+        if (script.imageController && script.imageController.updateTexture) {
+            script.imageController.updateTexture(tId);
+        }
+
+        
+        if (script.buttonImageController && script.buttonImageController.updateTexture) {
+            script.buttonImageController.updateTexture(tId);
+        }
     }
-
-    
-    if (script.buttonImageController && script.buttonImageController.updateTexture) {
-        script.buttonImageController.updateTexture(tId);
+    else {
+       if (script.imageController && script.imageController.updateTexture) {
+            script.imageController.updateTexture(script.textureSelection);
+        } 
     }
     /*
     // Call visibility update in image controller, if exists

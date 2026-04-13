@@ -30,6 +30,8 @@
     buttonScript: false
     imageController: false
     objController: false
+    oldButton: false
+    textureSelection: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -43,6 +45,8 @@
       imageController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       objController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       buttonImageController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      textureSelection: 3
+      oldButton: false
   ScriptTypes:
     -
       {}

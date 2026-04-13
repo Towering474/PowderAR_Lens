@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 68
+    size: 71
     values:
       - 2Dchangecontroller.js
       - 3Dchangecontroller.js
@@ -48,6 +48,9 @@ CollapsedEntities:
       - ScreenTexture.screenTexture
       - Slider.lsc
       - Snapcode Marker.scmarker
+      - T0B.mat
+      - T1B.mat
+      - T2B.mat
       - UI Button.lsc
       - color_correction.ss_graph
       - frame 2.png

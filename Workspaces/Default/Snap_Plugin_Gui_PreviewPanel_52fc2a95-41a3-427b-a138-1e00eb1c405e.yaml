@@ -64,7 +64,7 @@ resolutionScale:
   options: 4
 simulatedDevice:
   type: string
-  value: Unknown
+  value: iPhone 14 Pro
   options: 4
 stereoEye:
   type: string
