@@ -729,7 +729,6 @@
     - !<own> 9eabdf47-d46e-4762-a6ad-da1904df4756
   Components:
     - !<own> 0673fcc9-217b-4200-833d-2d618a4a6e9a
-    - !<own> c0e87fc2-dc05-4430-b3e7-437d57136652
 - !<ScreenTransform/3b9823dc-61a9-4fa6-8195-6a2c31691176>
   PrefabRemaps:
     []
@@ -1763,23 +1762,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<ScriptComponent/c0e87fc2-dc05-4430-b3e7-437d57136652>
-  PrefabRemaps:
-    []
-  Name: EnableLightShadows
-  Enabled: true
-  ScriptAsset: !<reference> 1c0bc6d9-332f-458b-a1e4-fa564b3ea17c
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      autoEnableLightShadows: true
-      lightSource: !<reference.LightSource> 0005641c-028d-463e-0000-000000014b59
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/c143a798-a75f-4884-a816-7f2254edfdb0>
   PrefabRemaps:
     []

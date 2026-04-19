@@ -6,7 +6,7 @@ script.updateValue = function(opacityValue) {
         print("⚠️ Slider script not assigned!");
         return;
     }
-    print("workingO");
+    print("workingO" + opacityValue);
     script.sliderScript._setSliderValue(opacityValue);
 };
 

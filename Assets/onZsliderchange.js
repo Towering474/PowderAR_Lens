@@ -6,7 +6,7 @@ script.updateValue = function(zValue) {
         print("⚠️ Slider script not assigned!");
         return;
     }
-    print("working");
+    print("workingZ" + zValue);
     script.sliderScript._setSliderValue(zValue);
 };
 

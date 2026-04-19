@@ -37,8 +37,8 @@ function onbuttonValueChanged() {
     else {
        if (script.imageController && script.imageController.updateTexture) {
             script.imageController.updateTexture(script.textureSelection);
-            script.imageController.updateImage(0.7, 0.02);
-            script.oSliderController.updateValue(0.3);
+            script.imageController.updateImage(0.3, 0.02);
+            script.oSliderController.updateValue(-0.4);
             script.zSliderController.updateValue(-0.96);
         } 
     }

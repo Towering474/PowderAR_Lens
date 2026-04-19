@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 91
+    size: 89
     values:
       - 2Dchangecontroller.js
       - 3Dchangecontroller.js
@@ -26,7 +26,6 @@ CollapsedEntities:
       - Image.mat
       - Image.png
       - ImageMaterial.mat
-      - Marker Cube.lspkg
       - Marker Cube.lspkg/Marker_Cube_PUT_UNDER_MAIN_CAM__PLACE_IN_SCENE.prefab
       - Marker Cube.lspkg/Materials
       - Marker Cube.lspkg/Materials/Graph Matte Shadow.mat
@@ -35,7 +34,6 @@ CollapsedEntities:
       - Marker Cube.lspkg/Meshes
       - Marker Cube.lspkg/Meshes/Box.mesh
       - Marker Cube.lspkg/Meshes/Plane.mesh
-      - Marker Cube.lspkg/Scripts
       - Marker Cube.lspkg/Scripts/EnableLightShadows.js
       - Marker Cube.lspkg/Shaders
       - Marker Cube.lspkg/Shaders/Graph Matte Shadow.ss_graph
